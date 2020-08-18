@@ -1,0 +1,42 @@
+:root {
+	--black: #595959;
+	--grey1: #F3F3F4;
+	--grey2: #e3e3e3;
+}
+
+
+body, html{
+	font-family: "Courier New", Courier, monospace;
+	background-color: var(--grey1);
+}
+
+.divider{
+	background-color: var(--grey2);
+    height: 2px;
+    margin: 10% auto;
+    width: 99%;
+}
+
+header, .control, .sub-data-master-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-content{
+	width: 90%;
+}
+.header-txt, .sub-txt{
+	color: var(--black);
+}
+.header-txt{
+	text-align: center;
+	margin-bottom: 0;
+}
+.sub-txt{
+	text-align: center;
+	font-size: 12px;
+}
+.txt-link, .sub-txt{
+	color: var(--black);
+	cursor: pointer;
+}

@@ -1,0 +1,671 @@
+{
+  "source": "https://www.raps.org/news-and-articles/news-articles/2020/3/covid-19-vaccine-tracker",
+  "totalCandidates": "42",
+  "phases": [
+    {
+      "phase": "Phase 3",
+      "candidates": "4"
+    },
+    {
+      "phase": "Phase 2/3",
+      "candidates": "3"
+    },
+    {
+      "phase": "Phase 2",
+      "candidates": "3"
+    },
+    {
+      "phase": "Phase 1/2",
+      "candidates": "6"
+    },
+    {
+      "phase": "Phase 1",
+      "candidates": "8"
+    },
+    {
+      "phase": "Pre-clinical",
+      "candidates": "17"
+    },
+    {
+      "phase": "Early research",
+      "candidates": "1"
+    }
+  ],
+  "data": [
+    {
+      "candidate": "Inactivated vaccine",
+      "sponsors": [
+        "Wuhan Institute of Biological Products",
+        "China National Pharmaceutical Group (Sinopharm)"
+      ],
+      "details": "Background: Researchers at Sinopharm and the Wuhan Institute of Virology under the Chinese Academy of Sciences are developing an inactivated COVID-19 vaccine candidate. They have initiated a randomized, double-blind, placebo parallel-controlled Phase 1/2 clinical trial (ChiCTR2000031809) of healthy individuals starting at 6 years old.  Outcomes: The vaccine has shown a \"strong neutralizing antibody response\" in Phase 1/2 trials, according to a release from China National Biotec Group. Status: A Phase 3 trial is underway conducted in the United Arab Emirates.",
+      "trialPhase": "Phase 3",
+      "institutions": [
+        "Henan Provincial Center for Disease Control and Prevention"
+      ],
+      "funding": [
+        "Ministry of Science and Technology, China"
+      ]
+    },
+    {
+      "candidate": "CoronaVac",
+      "sponsors": [
+        "Sinovac"
+      ],
+      "details": "Background: CoronaVac (formerly PiCoVacc) is a formalin-inactivated and alum-adjuvanted candidate vaccine. Results from animal studies showed &ldquo;partial or complete protection in macaques&rdquo; exposed to SARS-CoV-2, according to a&nbsp;paper&nbsp;published by researchers in the journal&nbsp;Science.  Study Design: A Phase 1/2 trial enrolled 743 healthy volunteers (18-59 years old) who received two different dosages of the vaccine or placebo. There were 143 participants in Phase 1 (NCT04352608) and 600 participants in Phase 2 (NCT04383574).  Outcomes: Results from the Phase 1/2 trials published in the pre-print server medRxiv indicate the vaccine has good safety and immunogenicity, with 92.4% of participants receiving the 3 μg dose on a 0-14 day schedule and 97.4% of individuals receiving the dose on a 0-28 day schedule achieving seroconversion.  Status: Sinovac said a Phase 3 trial in collaboration with Instituto Butantan in Brazil is underway, and the company plans to enroll around 9,000 patients in the healthcare industry.",
+      "trialPhase": "Phase 3",
+      "institutions": [
+        "Sinovac Research and Development Co., Ltd."
+      ],
+      "funding": [
+        "Sinovac Research and Development Co., Ltd."
+      ]
+    },
+    {
+      "candidate": "mRNA-1273",
+      "sponsors": [
+        "Moderna"
+      ],
+      "details": "Background: mRNA-1273 was developed by Moderna based on prior studies of related coronaviruses such as those that cause severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS). A Phase 1 trial (NCT04283461) of 105 healthy participants provided the basis for Moderna&rsquo;s investigational new drug application (IND), which was successfully reviewed by the FDA and set the stage for Phase 2 testing. A Phase 2 trial of 600 healthy participants evaluating 25 µg, 100 µg, and 250 µg dose levels of the vaccine was completed, and mRNA-1273 has advanced to a Phase 3 trial (NCT04405076). Study Design: A Phase 3 trial of 30,000 participants at high risk for SARS-CoV-2 infection who will receive a 100 µg dose of mRNA-1273 or placebo and then followed for up to 2 years (COVE trial; NCT04470427).  Outcomes: Phase 1 data published in the New England Journal of Medicine showed mRNA-1273 successfully produced neutralizing antibody titers in 8 participants who received either 25 µg or 100 µg doses. The response was dose dependent in 45 participants across 25 µg, 100 µg, and 250 µg dose levels. In participants with available antibody data, neutralizing antibody titers were on par with what has been in seen in convalescent sera from people who have successfully fought off COVID-19. Results from a challenge in a mouse model showed mRNA-1273 prevented viral replication in the lungs, and neutralizing titers in the mouse model were similar in participants receiving 25 µg or 100 µg doses of the vaccine. Moderna said mRNA-1273 was \"generally safe and well tolerated.\"A study of nonhuman primates challenged with SARS-CoV-2 published in the New England Journal of Medicine had neutralizing activity, and limited inflammation and lung activity after being administered the vaccine. A paper published in Nature also showed mRNA-1273 induced neutralizing antibodies in mice.  Status: On 12 May, the FDA granted Fast Track designation to mRNA-1273. A Phase 3 trial of the vaccine is underway, which is being funded by Operation Warp Speed.",
+      "trialPhase": "Phase 3",
+      "institutions": [
+        "Kaiser Permanente Washington Health Research Institute"
+      ],
+      "funding": [
+        "Operation Warp Speed",
+        "NIAID, BARDA ($483 million)"
+      ]
+    },
+    {
+      "candidate": "Bacillus Calmette-Guerin (BCG) live-attenuated vaccine",
+      "sponsors": [
+        "University of Melbourne and Murdoch Children&rsquo",
+        "s Research Institute",
+        "Radboud University Medical Center",
+        "Faustman Lab at Massachusetts General Hospital"
+      ],
+      "details": "Background: The BCG vaccine is indicated to prevent tuberculosis in those who have a higher risk of the disease. It has been implicated in helping to combat other infections outside TB by boosting the immune system to fight similar infections. In 2017, the World Health Organization (WHO)&nbsp;reported&nbsp;the BCG vaccine may be effective against leprosy and other nontuberculous mycobacteria such as buruli ulcer disease. Other papers have posited the vaccine is effective in preventing acute&nbsp;respiratory tract infections&nbsp;in elderly patients, other&nbsp;respiratory infection and sepsis. A non-peer reviewed paper posted in March 2020 on the preprint server medRxiv has suggested countries with BCG vaccination programs at childhood are&nbsp;faring better&nbsp;in the fight against COVID-19 compared with countries that do not require BCG vaccination. Trials: BCG vaccines are being studied in the randomized, controlled, Phase 3 BRACE trial, which aims to recruit 4,170 healthcare workers in hospitals in Australia (NCT04327206). Researchers in The Netherlands launched the randomized, parallel-assignment, phase 3 BCG-CORONA trial on 31 March and plan to enroll 1,500 healthcare workers to receive the BCG vaccine or placebo (NCT04328441). The Faustman Lab is currently evaluating the BCG vaccine&rsquo;s effectiveness in&nbsp;type 1 diabetes&nbsp;and is seeking funding to launch trial to assess whether the vaccine helps prevent COVID-19 in healthcare workers, according to&nbsp;independent reporting&nbsp;from the&nbsp;New York Times. Status: Trials are still currently recruiting. A recent paper published in Science Advances found countries that required BCG vaccination until the year 2000 had significantly slower growth rates of COVID-19 compared with countries that did not mandate the vaccine.",
+      "trialPhase": "Phase 2/3",
+      "institutions": [
+        "University of Melbourne and Murdoch Children&rsquo",
+        "s Research Institute",
+        "Radboud University Medical Center",
+        "Faustman Lab at Massachusetts General Hospital"
+      ],
+      "funding": [
+        "Murdoch Children’s Research Institute",
+        "UMC Utrecht"
+      ]
+    },
+    {
+      "candidate": "AZD1222",
+      "sponsors": [
+        "The University of Oxford",
+        "AstraZeneca",
+        "IQVIA"
+      ],
+      "details": "Background: The Oxford Vaccine Group at the University of Oxford are developing a new vaccine candidate for COVID-19, a chimpanzee adenovirus vaccine vector called AZD1222 (previously ChAdOx1). The team has previously developed a MERS vaccine. Preclinical data in a paper on the pre-print server bioRxiv that showed a significantly reduced viral load and &ldquo;humoral and cellular immune response.&rdquo; The vaccine candidate also showed an immune response in mice and pigs, according to information in a pre-print paper. Study Design: A Phase 1/2 (NCT04324606) single-blinded, multi-center study of 1,090 healthy adult volunteers aged 18-55 years with four treatment arms. Participants in two treatment arms will receive a single dose of AZD1222 or MenACWY, a meningococcal vaccine. A third treatment arm will receive AZD1222 and a booster at 4 weeks. In a fourth arm, participants will receive AZD1222 or MenACWY together with 1 g of paracetamol (acetaminophen) every 6 hours for 24 hours. The trial is active, but not currently recruiting. Outcomes: Preliminary results from the trial published in The Lancet showed the vaccine candidate had an &ldquo;acceptable safety profile&rdquo; with most patients demonstrating an antibody response after one dose and all patients showing a response after two doses. Status: On 21 May, AstraZeneca&nbsp;announced&nbsp;it has received $1 billion in funding from the Biomedical Advanced Research and Development Authority (BARDA) for &ldquo;development, production and delivery of the vaccine,&rdquo; beginning in September 2020. The agreement between AstraZeneca and BARDA includes a minimum of 400,000 doses of the vaccine, an upcoming Phase 3 trial of 30,000 participants, and a pediatric trial. On 22 May, Oxford researchers announced that they had begun recruitment for a Phase 2/3 trial of approximately 10,000 healthy adult volunteers to assess how well people across a broad range of ages could be protected from COVID-19. A Phase 3 trial of AZD1222 is being funded by Operation Warp Speed. IQVIA announced they are partnering with AstraZeneca to advance clinical trials for the vaccine",
+      "trialPhase": "Phase 2/3",
+      "institutions": [
+        "The University of Oxford,&nbsp",
+        "the Jenner Institute"
+      ],
+      "funding": [
+        "Operation Warp Speed",
+        "UK Ministry of Health",
+        "The University of Oxford",
+        "BARDA"
+      ]
+    },
+    {
+      "candidate": "BNT162",
+      "sponsors": [
+        "Pfizer, BioNTech"
+      ],
+      "details": "Background: Pfizer and BioNtech are&nbsp;collaborating BNT162, a series of vaccine candidates for COVID-19. BNT162 was initially four vaccine candidates originally developed by BioNTech, two candidates consisting of nucleoside modified mRNA-based (modRNA), one of uridine containing mRNA-based (uRNA), and the fourth candidate of self-amplifying mRNA-based (saRNA). The companies have selected the modRNA candidate BNT162b2 to move forward in a Phase 2/3 trial. &nbsp;Study Designs: A Phase 1/2 trial in the US and Germany of 200 healthy participants between aged 18-55 years, with a vaccine dose range of 1 &micro;g to 100 &micro;g is currently recruiting (NCT04380701). A Phase 2/3 trial of about 32,000 healthy participants is active, but not currently recruiting (NCT04368728). &nbsp;Outcomes: Results of one study of BNT162b1, a modRNA candidate, were reported 1 July on the non-peer-reviewed preprint server medRxiv. Robust immunogenicity was seen after vaccination at all three doses (10 &mu;g, 30 &mu;g and 100 &mu;g). Adverse events were elevated at the highest dose; therefore, participants did not receive a second dose at that level.  Status: Pfizer and BioNTech have received FDA Fast Track designation for two of the BNT162 candidates, BNT162b1 and BNT162b2. The companies have published results from a study that suggests one of the BNT162 candidates, BNT162b1, produced a neutralizing antibody response in participants who received the vaccine. However, they selected BNT162b2 as a candidate to advance to a Phase 2/3 safety study \"based on the totality of available data from our preclinical and clinical studies, including select immune response and tolerability parameters.\" A candidate could be ready for regulatory approval as early as December.",
+      "trialPhase": "Phase 2/3",
+      "institutions": [
+        "Multiple study sites in Europe and North America"
+      ],
+      "funding": [
+        "Pfizer",
+        "BioNTech"
+      ]
+    },
+    {
+      "candidate": "Ad5-nCoV",
+      "sponsors": [
+        "CanSino Biologics"
+      ],
+      "details": "Background: China&rsquo;s CanSino Biologics has developed a recombinant novel coronavirus vaccine that incorporates the adenovirus type 5 vector (Ad5). Preliminary safety data from a Phase 1 (ChiCTR2000030906; NCT04313127) clinical trial of 108 participants between 18 and 60 years old who will receive low, medium, and high doses of Ad5-nCoV has allowed the company to plan to initiate a Phase 2 trial, according to an announcement. The Phase 2 (ChiCTR2000031781) trial has identical inclusion criteria.Outcomes: Results from Phase 1 of the trial show a humoral and immunogenic response to the vaccine, according to a paper published in The Lancet. Adverse reactions such as pain (54%), fever (46%), fatigue (44%), headache (39%), and muscle pain (17%) occurred in 83% of patients in the low and medium dose groups and 75% of patients in the high dose group. In Phase 2 of the trial, neutralizing antibodies and specific interferon γ enzyme-linked immunospot assay responses were observed at all dose levels for most participants. Status: On 25 June, China’s Central Military Commission announced the military had been approved to use Ad5-nCoV for a period of 1 year, according to reporting in Reuters. A Phase 3 trial in Saudi Arabia is currently underway.",
+      "trialPhase": "Phase 3",
+      "institutions": [
+        "Tongji Hospital",
+        "Wuhan, China"
+      ],
+      "funding": [
+        "CanSino Biologics"
+      ]
+    },
+    {
+      "candidate": "Adjuvant recombinant vaccine candidate",
+      "sponsors": [
+        "Anhui Zhifei Longcom Biopharmaceutical, Institute of Microbiology of the Chinese Academy of Sciences"
+      ],
+      "details": "Background: China's National Medical Products Administration has approved a Phase 1 trial of a COVID-19 vaccine candidate developed by the Anhui Zhifei Longcom Biopharmaceutical and the Institute of Microbiology of the Chinese Academy of Sciences. A Phase 2 trial is underway, with results from Phase 1 expected in September, according to Reuters.",
+      "trialPhase": "Phase 2",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        ""
+      ]
+    },
+    {
+      "candidate": "ZyCoV-D",
+      "sponsors": [
+        "Zydus Cadila"
+      ],
+      "details": "Background: India’s Zydus Cadila is researching ZyCoV-D, a plasmid DNA vaccine candidates for COVID-19 that targets the viral entry membrane protein of the virus. The company has launched an adaptive Phase 1/2 dose escalation trial and plans to enroll about 1,000 healthy volunteers. On 5 August, Zydus announced that Phase 1 was complete and the candidate was entering Phase 2 trials.",
+      "trialPhase": "Phase 2",
+      "institutions": [
+        "Zydus Cadila"
+      ],
+      "funding": [
+        ""
+      ]
+    },
+    {
+      "candidate": "Covaxin",
+      "sponsors": [
+        "Bharat Biotech",
+        "National Institute of Virology"
+      ],
+      "details": "Background: Bharat Biotech, an Indian biotechnology company, is partnering with the National Institute of Virology to develop an inactivated vaccine candidate for COVID-19 called Covaxin. A Phase 1/2 trial of about 1,100 healthy participants is underway after approval by the Drug Controller General of India. In addition to Covaxin, Bharat Biotech is working on two other vaccine candidates: one with the University of Wisconsin–Madison and FluGen, and the other with Thomas Jefferson University. Status: Early results in the first 50 people who received the vaccine candidate appear to be \"encouraging,\" according to a comment from the trial's principal investigator. The Indian Council of Medical Research has reported this candidate has entered Phase 2 trials.",
+      "trialPhase": "Phase 2",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        ""
+      ]
+    },
+    {
+      "candidate": "BBIBP-CorV",
+      "sponsors": [
+        "Beijing Institute of Biological Products",
+        "China National Pharmaceutical Group (Sinopharm)"
+      ],
+      "details": "Background: Sinopharm is developing a second inactivated COVID-19 vaccine candidate, BBIBP-CorV, with the Beijing Institute of Biological Products. BBIBP-CorV is currently being evaluated in a Phase 2 trial (ChiCTR2000032459).  Outcomes: Results from a paper published in the journal Cell appear to show BBIBP-CorV provides \"highly efficient protection\" against SARS-CoV-2 in rhesus macaques who underwent challenge against the virus.  Status: More than 2,000 vaccines administered between Sinopharm's two inactivated vaccine trials. Both vaccine candidates could be ready for market by the end of the year, according to reporting from Reuters.",
+      "trialPhase": "Phase 1/2",
+      "institutions": [
+        "Henan Provincial Center for Disease Control and Prevention"
+      ],
+      "funding": [
+        "Ministry of Science and Technology, China"
+      ]
+    },
+    {
+      "candidate": "GX-19",
+      "sponsors": [
+        "Genexine"
+      ],
+      "details": "Background: Genexine, a biotechnology based in South Korea, is testing GX-19, a DNA vaccine candidate for COVID-19. The company has been approved for a Phase 1/2a clinical trial of 190 healthy participants randomized to receive the vaccine or placebo (NCT04445389). The company aims to complete Phase 1 in 3 months before moving to a multinational Phase 2 trial.",
+      "trialPhase": "Phase 1/2",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        "GenexineGenexine"
+      ]
+    },
+    {
+      "candidate": "Sputnik V",
+      "sponsors": [
+        "Gamaleya Research Institute, Acellena Contract Drug Research and Development"
+      ],
+      "details": "Background: The Gamaleya Research Institute in Russia is testing their non-replicating viral vector COVID-19 vaccine candidate, Sputnik V (formerly Gam-COVID-Vac), in a Phase 1/2 trial. The trial is expected to recruit about 38 participants to receive the vaccine candidate (NCT04436471) (NCT04437875). Status: The institute reportedly plans to test the candidate on a small section of the public in August, which would be the equivalent of a Phase 3 trial. Regulatory Actions: The Health Ministry of the Russian Federation has approved Sputnik V as the first vaccine for COVID-19. However, no trial data has been published to date and a Phase 3 trial of the candidate has not been initiated. The approval has drawn criticism in the medical community due to lack of data on safety and efficacy.",
+      "trialPhase": "Phase 1/2",
+      "institutions": [
+        "Various"
+      ],
+      "funding": [
+        "Gamaleya Research Institute of Epidemiology and Microbiology, Health Ministry of the Russian Federation"
+      ]
+    },
+    {
+      "candidate": "Self-amplifying RNA vaccine",
+      "sponsors": [
+        "Imperial College London"
+      ],
+      "details": "Background: Imperial College London researchers are developing a self-amplifying RNA vaccine for COVID-19. They developed a vaccine candidate within 14 days of receiving the sequence from China. Animal testing is underway. The investigators have received two rounds of funding from the United Kingdom&rsquo;s government &ndash; one on 22 April and another on 17 May. Study Design: The Phase 1/2 COVAC1 trial will enroll approximately 300 healthy participants between 18 and 75 years old, with an efficacy trial for 6,000 participants planned for October. Status: On 7 June, Imperial College London announced it had partnered with Morningside Ventures to establish VacEquity Global Health, an initiative that would help keep costs down for their COVID-19 vaccines down for citizens in the UK and internationally.",
+      "trialPhase": "Phase 1/2",
+      "institutions": [
+        "Imperial College London"
+      ],
+      "funding": [
+        "UK Secretary of State for Health",
+        "UK Secretary of State for Business, Energy and Industrial Strategy"
+      ]
+    },
+    {
+      "candidate": "LUNAR-COV19",
+      "sponsors": [
+        "Arcturus Therapeutics&nbsp",
+        "and&nbsp",
+        "Duke-NUS Medical School"
+      ],
+      "details": "Background: Arcturus and Duke-NUS Singapore are partnering to develop a COVID-19 vaccine candidate that uses Arcturus&rsquo; self-replicating RNA and nanoparticle non-viral delivery system. Pre-clinical data from the company indicates LUNAR-COV19 provides an adaptive cellular (CD8+ cells) and balanced (Th1/Th2) immune response. Arcturus said a Phase 1/2 clinical trials will proceed in Singapore.",
+      "trialPhase": "Phase 1/2",
+      "institutions": [
+        "Duke-NUS Medical School, Singapore"
+      ],
+      "funding": [
+        "Arcturus"
+      ]
+    },
+    {
+      "candidate": "INO-4800",
+      "sponsors": [
+        "Inovio  Pharmaceuticals"
+      ],
+      "details": "Background: Inovio is developing a&nbsp;DNA vaccine&nbsp;for SARS-CoV-2 that is in line with other DNA vaccines the company is developing, such as for the MERS coronavirus. The vaccine is injected intradermally through a device which Inovio plans to scale production of while they wait for results of INO-4800. Study Design: As of 28 April, the company had enrolled 40 healthy volunteers in a a non-randomized, open label Phase 1 (NCT04336410) trial according to a&nbsp;press release. Participants were to receive one or two intradermal injections (1.0 mg) of INO-4800 at baseline and at 4 weeks, followed by electroporation. Preclinical data were published in Nature Communications and showed that mice and guinea pigs who received INO-4800 demonstrated neutralizing antibodies as well as humoral and T cell responses. In guinea pigs, researchers observed protein binding antibody titers and blocking of angiotensin-converting enzyme 2 (ACE2)/SARS-CoV-2 S proteins. Outcomes: On 30 July, Inovio reported positive results from an INO-4800 trial where rhesus macaques received the vaccine and were challenged with SARS-CoV-2. After 4 months, durable antibody and T cell responses were observed in the animals as well as memory T and B cell responses. Status: On 16 April, Inovio, the Center for Epidemic Preparedness Innovations (CEPI) and the International Vaccine Institute (IVI)&nbsp;announced&nbsp;they are working with the&nbsp;Korea National Institute of Health (KNIH) to conduct a Phase 1/2 clinical trial of INO-4800 in South Korea. In a press release, Inovio said early results from the vaccine showed immune responses in nearly all Phase 1 trial participants, noting that INO-4800 also inhibited replication of SARS-CoV-2 in mice.",
+      "trialPhase": "Phase 1/2",
+      "institutions": [
+        "Center for Pharmaceutical Research, Kansas City. Mo.",
+        "University of Pennsylvania, Philadelphia"
+      ],
+      "funding": [
+        "Inovio Pharmaceuticals"
+      ]
+    },
+    {
+      "candidate": "mRNA-based vaccine",
+      "sponsors": [
+        "CureVac"
+      ],
+      "details": "Background: CureVac is developing an mRNA-based vaccine to produce an immune response against COVID-19. The vaccine works by using non-chemically modified nucleotides within mRNA to \"provide a strong and balanced activation of the immune system. Pre-clinical results have shown virus neutralizing titers and T-cell response to the candidate, according to a 14 May company release.  Status: The German federal government has invested 300 million Euros into the company, according to a press release. On 17 June, CureVac announced it had received regulatory approval to initiate a Phase 1 trial of 168 healthy subjects to evaluate its vaccine in Germany and Belgium. ",
+      "trialPhase": "Phase 1",
+      "institutions": [
+        "CureVac"
+      ],
+      "funding": [
+        "CureVac",
+        "German federal government"
+      ]
+    },
+    {
+      "candidate": "SCB-2019",
+      "sponsors": [
+        "GlaxoSmithKline,&nbsp",
+        "Sanofi,&nbsp",
+        "Clover Biopharmaceuticals, Dynavax&nbsp",
+        "and Xiamen Innovax"
+      ],
+      "details": "Background: Chinese company Clover Biopharmaceuticals is collaborating with GSK, Dynavax, Xiamen Innovax Biotech and Sanofi to develop SCB-2019, a COVID-19 vaccine candidate that uses Clover's S-Trimer platform, GSK's AS03 adjuvant, and Dynavax's CpG 1018 adjuvant. Study Design: A Phase 1 trial of 150 healthy volunteers who will receive the SCB-2019 vaccine candidate alone, with the AS03 adjuvant, or with the CpG 1018 adjuvant with potassium aluminum sulfate (Alum) (NCT04405908). Status: The first participants in the trial have been dosed as of 19 June, and results are expected in August, according to a press release CEPI has said they will provide an additional $66 million in funding pre-clinical and Phase 1 trials of a vaccine candidate.",
+      "trialPhase": "Phase 1",
+      "institutions": [
+        "Linear Clinical Research (Australia)"
+      ],
+      "funding": [
+        "CEPI"
+      ]
+    },
+    {
+      "candidate": "COVAX-19",
+      "sponsors": [
+        "Vaxine Pty Ltd."
+      ],
+      "details": "Background: Vaxine Pty Ltd. has developed a monovalent recombinant protein vaccine.\n&nbsp;\nStudy Design: A Phase 1 (NCT04453852) randomized, placebo controlled trial of 40 healthy adults aged 18-65 years who will receive either Covax-19 (25 μg of spike antigen plus 15 mg of Advax-2 adjuvant) or saline to assess generation of neutralizing antibodies to the spike proteins of SARS-CoV-2, as well as induction of T-cells against the spike proteins. Participants will receive two dose given three weeks apart.",
+      "trialPhase": "Phase 1",
+      "institutions": [
+        "Royal Adelaide Hospital"
+      ],
+      "funding": [
+        "NIAID"
+      ]
+    },
+    {
+      "candidate": "NVX-CoV2373",
+      "sponsors": [
+        "Novavax"
+      ],
+      "details": "Background: Biotech company Novavax announced in March that it has produced a stable, prefusion protein nanoparticle vaccine candidate for COVID-19. A Phase 1/2 trial evaluating NVX-CoV2373 began on 25 May.  Study Design: A randomized, observer-blinded, placebo-controlled trial of 130 healthy participants 18 to 59 years of age at two sites in Australia is being conducted. Patients will receive a two-dose regimen of 5 μg or 25 μg of NVX-CoV2373 with or without Novavax's Matrix‑M adjutant (NCT04368988). Outcomes: ON 4 August, Novavax announced positive Phase 1 results for NVX-CoV2373, indicating participants who had received the vaccine developed an antibody response in participants at multiple dose levels. The candidate also had a favorable safety profile, according to the company.  Status: On May 11, CEPI announced they had provided Novavax with an additional $384 million towards the development and manufacturing of NVX-CoV2373. Novavax plans to manufacture 1 billion doses of NVX-CoV2373 by 2021 as part of their recent acquision of Praha Vaccines. Novavax was awarded a $60 million US Department of Defense contract towards manufacturing NVX-CoV2373, according to a company press release, and another $1.6 billion from Operation Warp Speed if the candidate is effective in clinical trials. The company has raised another $200 million through selling stock to an investment fund associated with RA Capital Management. Novavax has completed Phase 1 and will release results at the end of July, according to a public announcement made by the company's CEO.",
+      "trialPhase": "Phase 1",
+      "institutions": [
+        "Novavax"
+      ],
+      "funding": [
+        "Novavax, CEPI, Department of Defense ($60 million)"
+      ]
+    },
+    {
+      "candidate": "Plant-based adjutant COVID-19 vaccine candidate",
+      "sponsors": [
+        "Medicago",
+        "GSK",
+        "Dynavax"
+      ],
+      "details": "Background: Medicago, which recently developed a seasonal recombinant quadrivalent virus-like particle (VLP) influenza vaccine, reported they created a coronavirus VLP 20 days after working with the SARS-CoV-2s genome. Medicago is also testing the candidate with two additional vaccine adjutants from GSK and Dynavax. Status: A single dose of Medicago&rsquo;s plant-based vaccine candidate in mice yielded a positive antibody response after 10 days, according to a company release. A Phase 1 trial of 180 healthy participants is underway, and Medicago expects to begin a Phase 2 trial in October of 2020.",
+      "trialPhase": "Phase 1",
+      "institutions": [
+        "Medicago"
+      ],
+      "funding": [
+        "Medicago"
+      ]
+    },
+    {
+      "candidate": "Molecular clamp vaccine",
+      "sponsors": [
+        "CSL",
+        "The University of Queensland"
+      ],
+      "details": "Background: Researchers at the University of Queensland have developed a molecular clamp vaccine candidate for COVID-19. The vaccine helps the body to better recognize the protein on the virus surface by locking the unstable, prefusion version of the surface proteins in a way the immune system recognizes. Status: A Phase 1 trial is underway evaluating 120 healthy volunteers aged 18-55 years old. The university has announced it is partnering with CSL and CEPI to develop and manufacture the vaccine pending results from a Phase 1 trial. If clinical trials are successful, the vaccine may be available by the end of 2021, according to a joint press release.",
+      "trialPhase": "Phase 1",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        "CEPI",
+        "CSL"
+      ]
+    },
+    {
+      "candidate": "bacTRL-Spike",
+      "sponsors": [
+        "Symvivo"
+      ],
+      "details": "Background: bacTRL-Spike is a bifidobacteria monovalent SARS-CoV-2 DNA oral vaccine candidate. Symvivo also separately is developing two other vaccine candidates: a trivalent vaccine that uses the spike protein, nucleocapsid protein, and matrix glycoprotein; and an immunoprophylaxis agent that uses prophylactic nanobody therapy. bacTRL-Spike is currently being evaluated in a phase 1 trial (NCT04334980) of 84 healthy participants at varying doses tested against a placebo group.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "Symvivo Corporation"
+      ],
+      "funding": [
+        "Symvivo Corporation"
+      ]
+    },
+    {
+      "candidate": "PittCoVacc",
+      "sponsors": [
+        "UPMC/University of Pittsburgh School of Medicine"
+      ],
+      "details": "Background: Researchers at the University of Pittsburgh have received a $4.9 million grant from the Coalition for Epidemic Preparedness Innovations (CEPI) to develop a COVID-19 vaccine candidate. On 2 April, investigators announced that PittCoVacc was effective in mice, delivered through a fingertip patch.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "University of Pittsburgh"
+      ],
+      "funding": [
+        "CEPI"
+      ]
+    },
+    {
+      "candidate": "V591",
+      "sponsors": [
+        "University of Pittsburgh’s Center for Vaccine Research"
+      ],
+      "details": "Background: The Center for Vaccine Research at the University of Pittsburgh School of Medicine is developing a measles vector vaccine together with Themis Biosciences and Institute Pasteur. On 26 May, Merck announced they had acquired Themis and will help develop and scale up the vaccine candidate. Outcomes: According to a paper&nbsp;published in EBioMedicine, the vaccine creates antibodies in mice that the researchers believe is sufficient to neutralize the virus.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "University of Pittsburgh",
+        "Themis Biosciences",
+        "Institut Pasteur"
+      ],
+      "funding": [
+        "Merck"
+      ]
+    },
+    {
+      "candidate": "Ii-Key peptide COVID-19 vaccine",
+      "sponsors": [
+        "Generex Biotechnology"
+      ],
+      "details": "Background: Generex subsidiary NuGenerex Immuno-Oncology is spearheading a vaccine project to create an Ii-Key peptide vaccine against COVID-19. In a company press release&nbsp;dated 27 February, Generex said they wanted to produce a vaccine candidate that could be tested in humans \"within 90 days.\"",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "Generex"
+      ],
+      "funding": [
+        "Generex"
+      ]
+    },
+    {
+      "candidate": "Recombinant vaccine",
+      "sponsors": [
+        "Vaxart"
+      ],
+      "details": "Background: Vaxart is working with Emergent Biosolutions and KindredBio to develop and manufacture their oral recombinant vaccine candidate for COVID-19. They plan to initiate a Phase 1 clinical study &ldquo;early in the second half of 2020,&rdquo; according to a&nbsp;press release. The company has received &ldquo;positive pre-clinical results&rdquo; for its oral vaccine candidate and selected the oral vaccine candidate over several others moving forward for testing and manufacturing. Animal testing of the oral vaccine yielded SARS-CoV-2 antibodies after first and second doses, according to a statement. Vaxart's candidate was selected to participate in a non-human primate (NHP) challenge funded by the U.S. government's Operation Ward Speed program.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "Vaxart"
+      ],
+      "funding": [
+        "no information"
+      ]
+    },
+    {
+      "candidate": "LineaDNA",
+      "sponsors": [
+        "Takis Biotech"
+      ],
+      "details": "Background: A partnership between Takis Biotech and Applied DNA Sciences has resulted in five DNA vaccine candidates for COVID-19. Results from pre-clinical testing showed all five LineaDNA vaccine candidates produced \"strong antibody and T-cell responses\" against SARS-CoV-2, Takis said&nbsp; in a press release. Their final vaccine candidate could begin human testing by fall, according to a company press release.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "Takis Biotech"
+      ],
+      "funding": [
+        "Takis Biotech"
+      ]
+    },
+    {
+      "candidate": "Ad26.COV2-S",
+      "sponsors": [
+        "Johnson & Johnson"
+      ],
+      "details": "Background: Johnson & Johnson has announced their intention to develop a COVID-19 vaccine, Ad26.COV2-S, using their AdVac and PER.C6 systems, which were also used to develop the company's Ebola vaccine. The work is being done in J&J's Janssen Pharmaceuticals division. In partnership with BARDA, J&J has committed to investing more than $1 billion in vaccine research and development. Ad26.COV2-S is a part of Operation Warp Speed.  Study Design: A randomized, double-blind, placebo-controlled, Phase 1/2A study of recombinant Ad26.COV2-S in 1,045 healthy participants 18-55 years of age, and adults 65 years or older. Study sites are planned in the U.S. and Belgium. Outcomes: Researchers reported in a paper published in Nature that a single injection of Ad26.COV2-S \"induced robust neutralizing antibody responses and provided complete or near-complete protection in bronchoalveolar lavage and nasal swabs following SARS-CoV-2 challenge.\" Status: On 10 June, J&J announced it is accelerating Phase 1/2 trials for its vaccine candidate, Ad26.COV2-S, and human trials will begin in the second half of July instead of September 2020 as originally planned.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "Johnson & Johnson"
+      ],
+      "funding": [
+        "Operation Warp Speed",
+        "Johnson & Johnson",
+        "BARDA"
+      ]
+    },
+    {
+      "candidate": "AdCOVID",
+      "sponsors": [
+        "Altimmune"
+      ],
+      "details": "Background: Altimmune has developed a COVID-19 vaccine candidate using the same technology they used build their influenza vaccine, NasoVAX. The vaccine is delivered intranasally in a single dose to activate humoral, cellular and mucosal immunity. Pre-clinical results announced by the company show \"serum neutralizing activity and potent mucosal immunity\" and a strong antibody response in mice. Clinical testing is expected to begin in the fourth quarter of 2020. ",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "University of Alabama at Birmingham"
+      ],
+      "funding": [
+        "Altimmune"
+      ]
+    },
+    {
+      "candidate": "T-COVIDTM",
+      "sponsors": [
+        "Altimmune"
+      ],
+      "details": "Background: Altimmune has developed a COVID-19 vaccine candidate using the same technology they used build their influenza vaccine, NasoVAX. The vaccine would be delivered intranasally in a single dose to activate humoral, cellular and mucosal immunity. Although it is the same technology as Altimmune's other intranasal vaccine candidate for COVID-19, AdCOVID, the company says it works through a different mechanism. Status: On 1 June, Altimmune announced the FDA has approved a Phase 1/2 trial to begin in June, according to a company press release.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        "Altimmune"
+      ]
+    },
+    {
+      "candidate": "Protein subunit vaccine",
+      "sponsors": [
+        "University of Saskatchewan Vaccine and Infectious Disease Organization-International Vaccine Centre"
+      ],
+      "details": "Background: The University of Saskatchewan&rsquo;s Vaccine and Infectious Disease Organization-International Vaccine Centre (VIDO-InterVac) is developing a protein subunit vaccine for COVID-19 and recently received $1 million to accelerate testing. Early results show the vaccine candidate produces an immune response. Animal testing is underway, according to an interview with the center&rsquo;s director posted on the university&rsquo;s website.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "University of Saskatchewan Vaccine and Infectious Disease Organization-International Vaccine Centre"
+      ],
+      "funding": [
+        "no information"
+      ]
+    },
+    {
+      "candidate": "V590",
+      "sponsors": [
+        "Merck",
+        "IAVI"
+      ],
+      "details": "Background: Merck and nonprofit scientific research organization IAVI are collaborating to develop a COVID-19 vaccine candidate based on Merck's recombinant vesicular stomatitis virus (rVSV) technology used in the company's Ebola vaccine. A Phase 1 trial of 90 participants across two centers is currently recruiting (NCT04497298).",
+      "trialPhase": "Phase 1",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        "BARDA"
+      ]
+    },
+    {
+      "candidate": "Adenovirus-based vaccine",
+      "sponsors": [
+        "ImmunityBio",
+        "NantKwest"
+      ],
+      "details": "Background: Immunotherapy company ImmunityBio is developing a COVID-19 adenovirus vaccine candidate that targets both spike and nucleocapsid DNA in SARS-CoV-2. ImmunityBio's candidate has been selected to participate in the national program Operation Warp Speed. The vaccine demonstrated CD4+ and CD8+ antigen-specific T cell responses in mice, according to results published in the pre-print server bioRxiv.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        "Operation Warp Speed"
+      ]
+    },
+    {
+      "candidate": "AAVCOVID",
+      "sponsors": [
+        "Massachusetts Eye and Ear",
+        "Massachusetts General Hospital",
+        "University of Pennsylvania"
+      ],
+      "details": "Background: Mass Eye and Ear Institute, Mass General Hospital, and the University of Pennsylvania have teamed up to develop AAVCOVID, a novel gene-based vaccine candidate for COVID-19. Status: AAVCOVID is currently being tested in animals, with human clinical trials planned later this year, according to a press release.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        "Wyc Grousbeck",
+        "Emilia Fazzalari"
+      ]
+    },
+    {
+      "candidate": "Recombinant vaccine",
+      "sponsors": [
+        "Sanofi, Translate Bio"
+      ],
+      "details": "Background: Sanofi is partnering with Translate Bio to develop a COVID-19 vaccine candidate under its recombinant DNA platform using work from a previous SARS vaccine and in partnership with BARDA. The companies plan to enroll patients in a Phase 1/2 trial in September, according to reporting from Stat News.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        "BARDA"
+      ]
+    },
+    {
+      "candidate": "HaloVax",
+      "sponsors": [
+        "Voltron Therapeutics, Inc.",
+        "Hoth Therapeutics, Inc."
+      ],
+      "details": "Background: Voltron Therapeutics and Hoth Therapeutics are working with the Vaccine and Immunotherapy Center (VIC) of Massachusetts General Hospital to develop a COVID-19 vaccine candidate using the VIC's Self-Assembling Vaccine (SAV) platform. Two sets of vaccine candidates are currently in pre-clinical animal testing.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "MGH Vaccine and Immunotherapy Center"
+      ],
+      "funding": [
+        ""
+      ]
+    },
+    {
+      "candidate": "mRNA-based vaccine",
+      "sponsors": [
+        "Chulalongkorn University’s Center of Excellence in Vaccine Research and Development"
+      ],
+      "details": "Background: The Chulalongkorn University’s Center of Excellence in Vaccine Research and Development in Thailand is developing an mRNA vaccine candidate for COVID-19 similar to one in development by biotechnology company Moderna. The candidate has been successful in animal trials, generating an antibody response in monkeys and mice. Clinical trials in humans are planned for September of 2020, with 100 healthy volunteers enrolled in the first phase of the study.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        ""
+      ]
+    },
+    {
+      "candidate": "HDT-301",
+      "sponsors": [
+        "University of Washington",
+        "National Institutes of Health Rocky Mountain Laboratories",
+        "HDT Bio Corp"
+      ],
+      "details": "Background: Researchers from the University of Washington have developed a replicon RNA vaccine candidate named HDT-301 in collaboration with the National Institutes of Health Rocky Mountain Laboratories and HDT Bio Corp. HDT-301 had shown a \"robust\" antibody response in mice and primates during pre-clinical testing, and a Phase 1 trial is being planned, according to a press release from the University of Washington School of Medicine.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        "University of Washington",
+        "National Institutes of Health Rocky Mountain Laboratories",
+        "HDT Bio Corp"
+      ]
+    },
+    {
+      "candidate": "gp96-based vaccine",
+      "sponsors": [
+        "Heat Biologics"
+      ],
+      "details": "Background: Heat Biologics announced it is pairing with the University of Miami to use the gp96 heat shock protein backbone to develop at least one COVID-19 vaccine. Pre-clinical data demonstrated an immune response in animal models, according to a press release from the company on 29 July. \"Specifically, our latest pre-clinical studies demonstrated immunogenicity proof-of-concept, illustrating that our vaccine can expand human-HLA-restricted T-cells against immunodominant epitopes of SARS-CoV-2 Spike protein, and validating that the selected vaccine antigen may be appropriate for human testing,\" the CEO of Heat Biologics said.",
+      "trialPhase": "Pre-clinical",
+      "institutions": [
+        "University of Miami Miller School of Medicine"
+      ],
+      "funding": [
+        ""
+      ]
+    },
+    {
+      "candidate": "mRNA lipid nanoparticle (mRNA-LNP) vaccine",
+      "sponsors": [
+        "CanSino Biologics, Precision NanoSystems"
+      ],
+      "details": "Background: In addition to Ad5-nCoV, CanSino is developing an mRNA-LNP vaccine candidate for COVID-19 using Precision NanoSystems&rsquo; RNA vaccine platform. The company said in a press release that it will &ldquo;rapidly advance a COVID-19 mRNA-LNP vaccine candidate towards human clinical testing,&rdquo; but did not provide a timeline for development and testing.",
+      "trialPhase": "Early research",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        ""
+      ]
+    },
+    {
+      "candidate": "GRAd-COV2",
+      "sponsors": [
+        "ReiThera",
+        "Leukocare",
+        "Univercells"
+      ],
+      "details": "Background: Biotechnology companies ReiThera (Italy), Leukocare (Germany) and Univer cells (Belgium) are partnering to develop an adenovirus-based COVID-19 vaccine. A Phase 1 trial is currently underway in Italy.",
+      "trialPhase": "Phase 1",
+      "institutions": [
+        ""
+      ],
+      "funding": [
+        ""
+      ]
+    }
+  ]
+}
