@@ -2,12 +2,22 @@
 	--black: #595959;
 	--grey1: #F3F3F4;
 	--grey2: #e3e3e3;
+	--white: #FFFFFF;
 }
 
 
 body, html{
 	font-family: "Courier New", Courier, monospace;
 	background-color: var(--grey1);
+}
+
+.card, .thin-card{
+	background-color: var(--white);
+}
+.container, .container-total-vaccine{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .divider{
