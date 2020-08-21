@@ -50,3 +50,6 @@ header, .control, .sub-data-master-container{
 	color: var(--black);
 	cursor: pointer;
 }
+.vaccine-card{
+	background-color: var(--white);
+}

@@ -13,29 +13,17 @@
         grid-gap: 20px;
         padding: 5% 0 25% 0;
     }
-
     .data-lbl-container{
     	margin-left: 5%;
     	margin-right: 5%;
     	text-align: center;
     }
-
-    .thin-card{
+    main{
         width: 90%;
-        height: 50px;
-        margin-left: auto;
-        margin-right: auto;
+    }
+    .lbl-container{
         margin-top: 10%;
-    }
-    .thin-content{
-        display: flex;
-        justify-content: center;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .total-vaccine{
-        grid-row: 1 / 3;
+        text-align: center;
     }
     .phase-container{
         grid-row: 3 / 5;
@@ -57,7 +45,50 @@
         margin-top: 7%;
         font-weight: 100;
     }
-
+    .thin-card{
+        width: 95%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+    .thin-content{
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .title-container{
+/*    display: flex;
+        justify-content: center;
+        align-items: center;*/
+    }
+    .total-vaccine{
+        grid-row: 1 / 3;
+    }
+    .total-vaccine-content{
+        margin-top: 10%;
+        padding-bottom: 5%;
+    }
+    .vaccine-list-container{
+            display: grid;
+    grid-gap: 10px;
+/*    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+    grid-template: repeat(50, 30%) / repeat(auto-fit, minmax(250px, 1fr));
+/*    grid-template-rows: repeat(2, 100px);*/
+    }
+    .vaccine-card{
+        padding: 10% 0 10% 0;
+        border-radius: 10px;
+    }
+    .vaccine-card-title{
+        font-size: 5vw;
+/*        width: 90%;
+        margin: auto;*/
+/*        padding-left: 10%;
+        padding-right: 10%;*/
+        text-align: center;
+    }
     .vaccine-data{
     	font-size: 70px;
     	text-align: center;
@@ -70,14 +101,5 @@
     .vacine-phases-container{
         margin-top: 15%;
     }
-
-	main{
-		width: 90%;
-	}
-
-	.total-vaccine-content{
-		margin-top: 10%;
-		padding-bottom: 5%;
-	}
 
 }
