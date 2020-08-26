@@ -71,11 +71,11 @@
         padding-bottom: 5%;
     }
     .vaccine-list-container{
-            display: grid;
-    grid-gap: 10px;
-/*    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
-    grid-template: repeat(50, 30%) / repeat(auto-fit, minmax(250px, 1fr));
-/*    grid-template-rows: repeat(2, 100px);*/
+        display: grid;
+        grid-gap: 10px;
+    /*    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+        grid-template: repeat(80, 2%) / repeat(auto-fit, minmax(250px, 1fr));
+    /*    grid-template-rows: repeat(2, 100px);*/
     }
     .vaccine-card{
         padding: 10% 0 10% 0;
@@ -100,6 +100,9 @@
 
     .vacine-phases-container{
         margin-top: 15%;
+    }
+    .scene{
+        height: 300px;
     }
 
 }
