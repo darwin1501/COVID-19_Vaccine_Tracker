@@ -83,51 +83,83 @@ const getVaccineInfo = (()=>{
 
 	//each vaccine info.
 	for (let vaccineData = 0; vaccineData < vaccine.data.length; vaccineData++) {
-	
+
+		const sponsors = [];
+
+		const institutions = [];
+
+		const funding = [];
+
+		const vaccineName = vaccine.data[vaccineData].candidate;
+
+		const sponsorsList = vaccine.data[vaccineData].sponsors;
+
+		const institutionsList = vaccine.data[vaccineData].institutions;
+
+		const fundingList = vaccine.data[vaccineData].funding;
+
+		const vaccineDetails = vaccine.data[vaccineData].details;
+
+		const trialPhase = vaccine.data[vaccineData].trialPhase;
+
+		//replace spaces with underscores for classname
+		const classPhase = trialPhase.replace(/ /g, '_');
+
+		const classVaccineName = vaccineName.replace(/ /g, '_');
+
+		//get all sponsors
+		for(let sponsorsCount = 0; sponsorsCount < sponsorsList.length; sponsorsCount++){
+			// console.log(sponsorsList[sponsorsCount]);
+			sponsors.push(sponsorsList[sponsorsCount]);
+		}
+		//get all institutions
+		for(let institutionsCount = 0; institutionsCount < institutionsList.length; institutionsCount++){
+			// console.log(sponsorsList[sponsorsCount]);
+			institutions.push(institutionsList[institutionsCount]);
+		}
+		//get all fundings
+		for(let fundingCount = 0; fundingCount < fundingList.length; fundingCount++){
+			// console.log(sponsorsList[sponsorsCount]);
+			funding.push(fundingList[fundingCount]);
+		}
+
 		const vaccineInfoTemplate =`
-		<div class="scene scene--card">
+		<div class="scene scene--card ${classPhase} ${classVaccineName}">
 			  <div class="card-flipping">
 			    <div class="card__face card__face--front">
 			    	<div class="front-container">
-			    		<p class="front-txt">${vaccine.data[vaccineData].candidate}</p>
+			    		<p class="front-txt">${vaccineName}</p>
 			    		<br>
-			    		<p class="sub-front-txt">Trial Phase: ${vaccine.data[vaccineData].trialPhase}</p>
+			    		<p class="sub-front-txt">Trial Phase: ${trialPhase}</p>
 			    	</div>
 			    </div>
 			    <div class="card__face card__face--back">
 			    	<div class="back-container">
 			    		<!-- template string -->
 				    <p class="back-txt">
-				    	<label>Candidate: Lorem ipsum dolor sit.</label>
+				    	<label>Candidate:</label> ${vaccineName}
 				    	<br>
 				    	<br>
-				    	Sponsors: Lorem ipsum dolor sit.
+				    	<label>Sponsors:</label> ${sponsors}
 				    	<br>
 				    	<br>
-					    Details: Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quas perspiciatis modi nobis at distinctio! At aut alias accusantium voluptas tenetur. Veniam possimus minus animi, itaque quo, vero dolor nam!
+					    ${vaccineDetails}
 					    <br>
 					    <br>
-					    Trial Phase: Early research.
+					    <label>Trial:</label> ${trialPhase}
 					    <br>
 					    <br>
-					    Institutions: Multiple study sites in Europe and North America
+					    <label>Institutions:</label> ${institutions}
 					    <br>
 					    <br>
-					    Funding: perspiciatis modi
+					    <label>Funding:</label> ${funding}
 					</p>
 					</div>
 			   </div>
 			  </div>
 			</div>`
 
-			const vaccineList = document.getElementById('vaccine-list');
-
-	// vaccineList.innerHTML = vaccineInfoTemplate;
-	// let doc = new DOMParser().parseFromString(vaccineInfoTemplate, 'text/html');
-
-	// console.log(doc);
-
-	// console.log(vaccineList)
+	const vaccineList = document.getElementById('vaccine-list');
 
 	vaccineList.insertAdjacentHTML('beforeend', vaccineInfoTemplate)
 
@@ -135,16 +167,11 @@ const getVaccineInfo = (()=>{
 
 	const cardFlipping = document.getElementsByClassName('card-flipping');
 
-	// console.log(cardFlipping.length);
-
 	for(let element = 0; element < cardFlipping.length; element++){
-		// console.log(cardFlipping[element]);
 
 		cardFlipping[element].addEventListener( 'click', function() {
+
 	  		cardFlipping[element].classList.toggle('is-flipped');
 		});
-}
-
-// console.log(cardFlipping.lenght);
-
+	}
 })
