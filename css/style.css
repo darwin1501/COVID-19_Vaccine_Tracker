@@ -43,6 +43,11 @@ header, .control, .sub-data-master-container{
 	text-align: center;
 	margin-bottom: 0;
 }
+.hidden{
+  display: none;
+  margin-top: 500px;
+/*background-color: red;*/
+}
 label{
   color: var(--grey-d0) !important;
 }
@@ -103,7 +108,7 @@ label{
 }
 .card__face--front {
   background: var(--white);
-   border-radius: 10px;
+  border-radius: 10px;
 }
 .card__face--back {
   background: var(--white);

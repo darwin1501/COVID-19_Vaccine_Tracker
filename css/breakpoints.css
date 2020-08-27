@@ -74,7 +74,7 @@
         display: grid;
         grid-gap: 10px;
     /*    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
-        grid-template: repeat(80, 2%) / repeat(auto-fit, minmax(250px, 1fr));
+        grid-template: repeat(50, 300px) / repeat(auto-fit, minmax(250px, 1fr));
     /*    grid-template-rows: repeat(2, 100px);*/
     }
     .vaccine-card{

@@ -41,11 +41,16 @@ const getVaccineInfo = (()=>{
 		// console.log(vaccinePhases[phases]);
 
 		const numOfCandidates = vaccinePhases[phases].candidates;
-
+		//each phase
 		const phaseList = vaccinePhases[phases].phase;
+
+		const textNodePhase = document.createTextNode(phaseList);
 
 		//select parent element
 		const vaccineContainer = document.getElementById('vaccine-phases');
+
+		//selection
+		const selection = document.getElementById('selection');
 
 		// create element
 		const thinCard = document.createElement('div');
@@ -55,6 +60,8 @@ const getVaccineInfo = (()=>{
 		const phaseTxt = document.createElement('h3');
 
 		const phaseNum = document.createElement('h3');
+
+		const option = document.createElement('option');
 
 		thinCard.setAttribute('class', 'thin-card');
 
@@ -79,6 +86,13 @@ const getVaccineInfo = (()=>{
 		thinCard.appendChild(thinContent);
 
 		vaccineContainer.appendChild(thinCard);
+
+		// console.log(phaseList)
+		option.value = phaseList
+
+		option.appendChild(textNodePhase);
+
+		selection.appendChild(option);
 	};
 
 	//each vaccine info.
@@ -174,4 +188,37 @@ const getVaccineInfo = (()=>{
 	  		cardFlipping[element].classList.toggle('is-flipped');
 		});
 	}
+})
+
+const viewOption =(()=>{
+	const selected = document.getElementById('selection').value
+
+	// const vaccineList = document.querySelectorAll('#vaccine-list');
+
+	const classPhase = selected.replace(/ /g, '_');
+
+	//add hidden class to all phase card(child element)
+		document.querySelectorAll('.scene--card').forEach(function(element){
+  		element.classList.add('hidden');
+	});
+	// vaccineList.find('*')
+	// console.log(vaccineList);
+	//select all element
+	if(selected === 'all'){
+		document.querySelectorAll('.scene--card').forEach(function(element){
+
+  		element.classList.remove('hidden');
+		});
+	}else{
+		const selectedElement = document.getElementsByClassName(classPhase);
+		//loop
+		for (let element = 0; element < selectedElement.length; element++) {
+			// console.log(selectedElement[element]);
+
+			selectedElement[element].classList.remove('hidden');
+		};
+	//remove hidden class name at the selected value
+	}
+	// console.log(classPhase);
+	// console.log(selectedElement.length);
 })

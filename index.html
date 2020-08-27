@@ -59,7 +59,13 @@
                     <h2 class="phase-title">List of Possible Vaccines</h2>
                 </div>
                 <!-- controls -->
-
+                <div class="controls">
+                	<select class="selection" id="selection" onchange="viewOption()">
+                        <option selected="selected" value="all">
+                            All
+                        </option>
+                    </select> 
+                </div>
                 <!-- auto fit CSS Grid -->
                 <div class="vaccine-list-container" id="vaccine-list">
                 </div>
