@@ -193,17 +193,13 @@ const getVaccineInfo = (()=>{
 const viewOption =(()=>{
 	const selected = document.getElementById('selection').value
 
-	// const vaccineList = document.querySelectorAll('#vaccine-list');
-
 	const classPhase = selected.replace(/ /g, '_');
 
 	//add hidden class to all phase card(child element)
 		document.querySelectorAll('.scene--card').forEach(function(element){
   		element.classList.add('hidden');
 	});
-	// vaccineList.find('*')
-	// console.log(vaccineList);
-	//select all element
+
 	if(selected === 'all'){
 		document.querySelectorAll('.scene--card').forEach(function(element){
 
@@ -213,12 +209,22 @@ const viewOption =(()=>{
 		const selectedElement = document.getElementsByClassName(classPhase);
 		//loop
 		for (let element = 0; element < selectedElement.length; element++) {
-			// console.log(selectedElement[element]);
 
 			selectedElement[element].classList.remove('hidden');
 		};
-	//remove hidden class name at the selected value
 	}
-	// console.log(classPhase);
-	// console.log(selectedElement.length);
+})
+
+const searchVaccine = (()=>{
+	//hide all cards
+	//get the user input
+	const input =  document.getElementById('vaccineName').value
+
+	const modInput = input.replace(/ /g, '_');
+
+	console.log(modInput);
+
+	//run the for loop and look for every matches at three letters at the beginning
+	//if matches true extrack the whole word or get the whole classname and remove the hidden class
+
 })
