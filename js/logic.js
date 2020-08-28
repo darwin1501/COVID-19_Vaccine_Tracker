@@ -217,14 +217,58 @@ const viewOption =(()=>{
 
 const searchVaccine = (()=>{
 	//hide all cards
-	//get the user input
+	document.querySelectorAll('.scene--card').forEach(function(element){
+  		element.classList.add('hidden');
+	});
+
 	const input =  document.getElementById('vaccineName').value
 
 	const modInput = input.replace(/ /g, '_');
 
-	console.log(modInput);
+	//get data
+	const vaccine = JSON.parse( sessionStorage.vaccine );
+	//run the for loop and look for every string that matches the user input
+	for (let vaccineData = 0; vaccineData < vaccine.data.length; vaccineData++) {
 
-	//run the for loop and look for every matches at three letters at the beginning
+		const vaccineName = vaccine.data[vaccineData].candidate;
+
+		const vaccineClassName = vaccineName.replace(/ /g, '_');
+
+		const regEx =  new RegExp(modInput,'ig');
+
+		let result = regEx.test(vaccineClassName);
+
+		if(result === true){
+
+			const selectedElement = document.getElementsByClassName(vaccineClassName);
+
+			//loop
+			for (let element = 0; element < selectedElement.length; element++) {
+
+				selectedElement[element].classList.remove('hidden');
+			};
+	}
+
+			console.log(vaccineClassName)
+		}
+
+		 
+	})
+
+	// const classVaccineName = vaccineName.replace(/ /g, '_');
+
+	//get the user input
+	//string to match
+	// const newString = 'Sputnik-V'
+
+	// //run the for loop and look for every string that matches the user input
+
+	// const regEx =  new RegExp(modInput,'ig');
+
+	// let result = regEx.test(newString);
+
+	// console.log(result);
+
 	//if matches true extrack the whole word or get the whole classname and remove the hidden class
 
-})
+
