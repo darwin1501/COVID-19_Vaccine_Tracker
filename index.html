@@ -59,18 +59,23 @@
                     <h2 class="phase-title">List of Possible Vaccines</h2>
                 </div>
                 <!-- controls -->
-                <div class="controls">
+                <div class="control">
                 	<div class="selection-container">
+                        <h2 class="control-lbl">
+                            View By:
+                        </h2>
 	                	<select class="selection" id="selection" onchange="viewOption()">
 	                        <option selected="selected" value="all">
 	                            All
 	                        </option>
 	                    </select>
                 	</div>
-                	<div class="search-container">
-                		<input type="text" name="vaccine" id="vaccineName" oninput="searchVaccine()">
-                	</div>
                 </div>
+                <div class="search-container">
+                        <input type="text" name="vaccine" class="search-box" id="vaccineName" oninput="searchVaccine()" placeholder="Search Vaccine">
+                </div>
+                    <div class="divider"></div>
+                    <br>
                 <!-- auto fit CSS Grid -->
                 <div class="vaccine-list-container" id="vaccine-list">
                 </div>
@@ -78,7 +83,18 @@
             </div>
         </main>
     </div>
-
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-lbl">
+                Created By:
+            </h3>
+            <div class="footer-btn">
+                <p class="footer-btn-txt">
+                    Darwin
+                </p>
+            </div>
+         </div>
+    </footer>
 <script src="js/logic.js"></script>
 </body>
 </html>

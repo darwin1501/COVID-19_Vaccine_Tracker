@@ -1,5 +1,6 @@
 :root {
 	--black: #595959;
+  --black-l1: #999999;
   --grey-d0: #959595;
 	--grey1: #F3F3F4;
 	--grey2: #e3e3e3;
@@ -14,21 +15,64 @@ body, html{
 
 .card, .thin-card{
 	background-color: var(--white);
+  box-shadow: 2px 2px 5px 2px var(--grey2);
 }
 .container, .container-total-vaccine{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
+.control-lbl{
+  color: var(--black);
+}
 .divider{
 	background-color: var(--grey2);
     height: 2px;
     margin: 10% auto;
     width: 99%;
 }
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-top: solid var(--grey2) 2px;
+}
+.footer-btn{
+  color: var(--black);
+  border: solid var(--black);
+  border-width: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
+  /*margin-top: 2px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-btn:hover{
+     background-color: var(--black);
+     box-shadow: 1px 1px 20px 2px var(--black-l1);
+     transition: 0.5s;
+     color: var(--white);
+ }
+ .footer-btn-txt{
+    /* color: var(--black);*/
+     font-family: 'roboto' !important;
+ }
+ .footer-lbl{
+  font-family: 'roboto' !important;
+  color: var(--black);
+  font-size: 1em;
+ }
+.footer-content{
+  display: flex;
+    padding: 20px;
+}
 
-header, .control, .sub-data-master-container{
+header, .control, .search-container, .sub-data-master-container{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -50,6 +94,21 @@ header, .control, .sub-data-master-container{
 }
 label{
   color: var(--grey-d0) !important;
+}
+.search-box{
+  border: solid var(--grey1) 2px;
+  box-shadow: 1px 1px 1px 1px var(--grey2);
+  font-family: "Courier New", Courier, monospace;
+}
+.search-box:hover{
+  border: solid var(--grey-d0) 2px;
+}
+.selection{
+  padding: 10px;
+  border-radius: 5px;
+/*  border: solid var(--grey-d1) 2px;*/
+  border: none;
+  box-shadow: 2px 2px 5px 2px var(--grey2);
 }
 .sub-txt{
 	text-align: center;
@@ -74,6 +133,7 @@ label{
 /*  border: 1px solid #CCC;*/
   margin: 40px 0;
   perspective: 600px;
+  box-shadow: 2px 2px 5px 2px var(--grey2);
 }
 .back-txt{
   top: 10%;
@@ -108,7 +168,6 @@ label{
 }
 .card__face--front {
   background: var(--white);
-  border-radius: 10px;
 }
 .card__face--back {
   background: var(--white);
@@ -117,7 +176,6 @@ label{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
 } 
 .back-container{
   margin-top: -90%;

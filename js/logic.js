@@ -216,6 +216,9 @@ const viewOption =(()=>{
 })
 
 const searchVaccine = (()=>{
+	//set the selection value to all
+	document.getElementById('selection').value = 'all'
+
 	//hide all cards
 	document.querySelectorAll('.scene--card').forEach(function(element){
   		element.classList.add('hidden');
