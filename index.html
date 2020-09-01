@@ -19,17 +19,26 @@
                             Data Provided by:
                             <a class="txt-link" href="https://corona.lmao.ninja/docs/#/" target="_blank">
                                 NOVELCoVID19 API
+                            </a> and
+                            <a class="txt-link" href="https://www.raps.org/news-and-articles/news-articles/2020/3/covid-19-vaccine-tracker" target="_blank">
+                                www.raps.org
                             </a>
                         </p>
                     </br>
                 </div>
             </div>
         </header>
-	<div class="divider"></div>
+	<div class="divider-top"></div>
     <div class="container">
         <main>
+            <!-- animation -->
+            <div class="loading-container" id="loading">
+                <div class="lds-facebook">
+                    <div></div><div></div><div></div>
+                </div>
+            </div>
             <!-- css grid container -->
-            <div class="container-info-1">
+            <div class="container-info-1 hidden" id="content-one">
                 <!-- card -->
                 <div class="card total-vaccine">
                     <div class="total-vaccine-content">
@@ -46,18 +55,15 @@
                 </div>
                 <div class="phase-container">
                     <div class="phase-content">
-                        <h2 class="phase-title">Number of Possible Vaccines on Different Phases</h2>
+                        <p class="vaccine-data-lbl">Number of Possible Vaccines on Different Phases</p>
+                        <div class="divider"></div>
                         <div class="vacine-phases-container" id="vaccine-phases">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="container-info-2">
-                <!-- controls here -->
-                <div class="phase-title-container">
-                    <h2 class="phase-title">List of Possible Vaccines</h2>
-                </div>
+            <div class="container-info-2 hidden" id="content-two">                
                 <!-- controls -->
                 <div class="control">
                 	<div class="selection-container">
@@ -75,7 +81,9 @@
                         <input type="text" name="vaccine" class="search-box" id="vaccineName" oninput="searchVaccine()" placeholder="Search Vaccine">
                 </div>
                     <div class="divider"></div>
-                    <br>
+                    <div class="phase-title-container">
+                    <h2 class="phase-title">List of Possible Vaccines</h2>
+                </div>
                 <!-- auto fit CSS Grid -->
                 <div class="vaccine-list-container" id="vaccine-list">
                 </div>

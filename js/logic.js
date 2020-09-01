@@ -6,6 +6,15 @@ async function getData(){
 
 	const fetchData = await fetch(vaccineData);
 
+	// hide content while loading data
+	const contentOne = document.getElementById('content-one');
+
+	const contentTwo =document.getElementById('content-two');
+
+	contentOne.classList.add('hidden');
+
+	contentTwo.classList.add('hidden');
+
 	if(fetchData.ok){
 
 		const vaccineJson = await fetchData.json();
@@ -14,6 +23,14 @@ async function getData(){
 		sessionStorage.vaccine = JSON.stringify( vaccineJson );
 
 		getVaccineInfo();
+
+		const loading = document.getElementById('loading');
+
+		loading.classList.add('hidden');
+
+		contentOne.classList.remove('hidden');
+
+		contentTwo.classList.remove('hidden');
 
 	}else{
 		console.log( "HTTP-Error: " + vaccineData.status );

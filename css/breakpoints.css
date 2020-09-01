@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 320px){
 
-	.card, .thin-card{
+	.card, .phase-content, .thin-card{
 		border-radius: 10px;
 	}
 
@@ -29,6 +29,9 @@
     	margin-right: 5%;
     	text-align: center;
     }
+    .divider, .divider-top{
+        margin: 10% auto;
+    }
     main{
         width: 90%;
     }
@@ -37,9 +40,11 @@
         text-align: center;
     }
     .phase-container{
-        grid-row: 2 / 3;
+        grid-row: 2 / -1;
     }
-
+    .phase-content{
+        padding: 5% 5% 15% 5%;
+    }
     .phase-title{
         font-size: 16px;
         text-align: center;
@@ -153,11 +158,26 @@
         max-width: 400px;
         margin: auto;
     }
+    .container-info-2{
+        margin-top: -5%;
+    }
+    .control, .search-container{
+    justify-content: flex-end;
+    }
+    .divider{
+        margin: 5% auto;
+    }
+    .divider-top{
+        margin: 2% auto; 
+    }
     main{
         max-width: 640px;
     }
     .search-box{
         width: 400px;
+    }
+    .search-container{
+        margin-top: 2%;
     }
     .vaccine-list-container{
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -165,9 +185,6 @@
     }
 }
 @media  screen and (min-width: 800px) {
-    main{
-        max-width: none;
-    }
     .container{
         max-width: none;
         margin: 0 5% 0 5%;
@@ -175,8 +192,14 @@
     .container-info-1{
         max-width: none;
         display: flex;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         margin: auto;
+    }
+/*    .divider{
+        margin: 5% auto;
+    }*/
+    main{
+        max-width: none;
     }
     .phase-container{
         margin-top: 0;
@@ -186,4 +209,34 @@
         height: 30%;
         flex: 6;
     }
+}
+@media  screen and (min-width: 1050px) {
+    .container{
+        max-width: 930px;
+        margin: auto;
+        padding-bottom: 15%;
+    }
+    .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: -150px;
+    }
+    .sub-txt{
+        margin-left:35px;
+        margin-top: -5px;
+    }
+    .vaccine-data{
+        font-size: 6em;
+    }
+}
+@media  screen and (min-width: 1200px) {
+    .back-txt{
+        font-size: 15px !important;
+    }
+    .container{
+        max-width: 1000px;
+        margin: auto;
+    }
+
 }
