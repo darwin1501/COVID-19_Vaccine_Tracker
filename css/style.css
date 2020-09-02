@@ -1,19 +1,18 @@
 :root {
 	--black: #595959;
+  --black-bg: #272822;
   --black-l1: #999999;
   --grey-d0: #959595;
 	--grey1: #F3F3F4;
 	--grey2: #e3e3e3;
+  --grey-l1: #F9FAFB;
 	--white: #FFFFFF;
 }
-
-
 body, html{
 	font-family: "Courier New", Courier, monospace;
 	/*background-color: var(--grey1);*/
-  background-color: #F9FAFB;
+  background-color: var(--grey-l1);
 }
-
 .card, .thin-card, .phase-content{
 	background-color: var(--white);
   box-shadow: 2px 2px 5px 2px var(--grey2);
@@ -94,6 +93,10 @@ header, .control, .loading-container, .search-container, .sub-data-master-contai
 label{
   color: var(--grey-d0) !important;
 }
+.result-count{
+  text-align: center;
+  margin: 10% auto;
+}
 .search-box{
   border: solid var(--grey1) 2px;
   box-shadow: 1px 1px 1px 1px var(--grey2);
@@ -113,6 +116,11 @@ label{
 	text-align: center;
 	font-size: 12px;
 }
+.toogle-btn-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .txt-link, .sub-txt{
 	color: var(--black);
 	cursor: pointer;
@@ -124,7 +132,7 @@ label{
   text-align: center;
 }
 
-/*loading animation config*/
+/*loading animation config START*/
   .lds-facebook {
   display: inline-block;
   position: relative;
@@ -161,11 +169,91 @@ label{
     height: 32px;
   }
 }
+/*loading animation config END*/
 
-/*flipping card style config*/
+/*toogle button config START*/
+/*toogle button design*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
-/*body { font-family: sans-serif; }*/
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/*default slider bg color*/
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*when the slider(circle) at the left*/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: url(../img/svg/light_mode.svg) center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*when the slider(circle) at the right*/
+input:checked + .slider {
+  background-color: var(--black);
+}
 
+/*when the slider(circle) at the right*/
+input:checked + .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: url(../img/svg/dark_mode.svg) center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*toogle button config END*/
+
+/*flipping card style config START*/
 .scene {
 /*  width: 240px;
   height: 320px;*/
@@ -240,12 +328,6 @@ label{
   position: absolute;
   margin: 10%;
 }
-/*label{
-  text-align: right !important;
-  position: relative !important;
-  margin: 20% !important;
-  color: red;
-}*/
 .sub-front-txt{
   color: var(--black);
   margin-top: 5%;
@@ -254,5 +336,28 @@ label{
   position: absolute;
   bottom: 0;
 }
+/*flipping card style config END*/
+
+/*transitions START*/
+.body-bg-lht, .body-bg-drk, .html-bg-lht, .html-bg-drk{
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+/*transitions END*/
+
+/*light mode design START*/
+
+.html-bg-lht, .body-bg-lht{
+  background-color: var(--grey-l1);
+}
+/*light mode design END*/
+
+/*dark mode design START*/
+
+.html-bg-drk, .body-bg-drk{
+  background-color: var(--black-bg) !important;
+}
+
+/*dark mode design END*/
 
 

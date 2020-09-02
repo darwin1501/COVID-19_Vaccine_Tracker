@@ -165,7 +165,7 @@ const getVaccineInfo = (()=>{
 			    	</div>
 			    </div>
 			    <div class="card__face card__face--back">
-			    	<div class="back-container">
+			    <div class="back-container">
 			    		<!-- template string -->
 				    <p class="back-txt">
 				    	<label>Candidate:</label> ${vaccineName}
@@ -245,6 +245,14 @@ const searchVaccine = (()=>{
 
 	const modInput = input.replace(/ /g, '_');
 
+	let countResult = [];
+
+	countResult.length = 0;
+
+	const resultCount =  document.getElementById('result-count');
+
+	resultCount.classList.add('hidden')
+
 	//get data
 	const vaccine = JSON.parse( sessionStorage.vaccine );
 	//run the for loop and look for every string that matches the user input
@@ -266,29 +274,65 @@ const searchVaccine = (()=>{
 			for (let element = 0; element < selectedElement.length; element++) {
 
 				selectedElement[element].classList.remove('hidden');
-			};
-	}
 
-			console.log(vaccineClassName)
+				countResult.push(selectedElement[element])
+
+				// console.log(selectedElement.length)
+
+			};
+
+
 		}
 
-		 
+		// resultCount.innerHTML = countResult.length
+
+		}
+
+		if(countResult.length === 0){
+
+			resultCount.classList.remove('hidden')
+
+			resultCount.innerHTML = 'No results found'
+		}		 
 	})
 
-	// const classVaccineName = vaccineName.replace(/ /g, '_');
+// toogle option config
 
-	//get the user input
-	//string to match
-	// const newString = 'Sputnik-V'
+document.getElementById("darkmode-btn").addEventListener("click", function(){
 
-	// //run the for loop and look for every string that matches the user input
+	const value = document.getElementById("darkmode-btn").value
 
-	// const regEx =  new RegExp(modInput,'ig');
+	//html
+    const html = document.querySelector('html');
+    //body
+    const body = document.querySelector('body');
 
-	// let result = regEx.test(newString);
+	if(value === 'off'){
+		//when darkmode off
+		//add light remove dark
+		document.getElementById("darkmode-btn").value = 'on';
 
-	// console.log(result);
+		body.classList.add('body-bg-lht');
+		body.classList.remove('body-bg-drk');
 
-	//if matches true extrack the whole word or get the whole classname and remove the hidden class
+		html.classList.add('html-bg-lht');
+		html.classList.remove('html-bg-drk');
+
+	}else if(value === 'on'){
+		//when darkmode off
+		//add dark remove light
+		document.getElementById("darkmode-btn").value = 'off';
+
+		body.classList.add('body-bg-drk');
+		body.classList.remove('body-bg-lht');
+
+		html.classList.add('html-bg-drk');
+		html.classList.remove('html-bg-lht');
+
+	}
+	// console.log(value)
+})
+
+	
 
 

@@ -24,11 +24,10 @@
         font-size: 14px;
         text-align: center;
     }
-    .data-lbl-container{
-    	margin-left: 5%;
-    	margin-right: 5%;
+/*    .vaccine-data-lbl{
+    	padding: 5%;
     	text-align: center;
-    }
+    }*/
     .divider, .divider-top{
         margin: 10% auto;
     }
@@ -39,18 +38,26 @@
         margin-top: 10%;
         text-align: center;
     }
+    .loading-container{
+        margin-top: 1%;
+    }
     .phase-container{
         grid-row: 2 / -1;
     }
     .phase-content{
-        padding: 5% 5% 15% 5%;
+        padding-top: -10%;
+    }
+    .vacine-phases-container{
+        padding: 0 5% 15% 5%;
+    }
+    .phase-lbl-container{
+        padding: 5% 5% 1% 5%;
     }
     .phase-title{
         font-size: 16px;
         text-align: center;
         font-weight: bold;
     }
-
     .phase-num{
         /*margin-left: 10%;*/
         font-size: 25px;
@@ -83,7 +90,7 @@
         grid-row: 1 / 2;
     }
     .total-vaccine-content{
-        margin-top: 10%;
+     /*   margin-top: 10%;*/
         padding-bottom: 5%;
     }
     .vaccine-list-container{
@@ -159,7 +166,7 @@
         margin: auto;
     }
     .container-info-2{
-        margin-top: -5%;
+        margin-top: 5%;
     }
     .control, .search-container{
     justify-content: flex-end;
@@ -211,6 +218,9 @@
     }
 }
 @media  screen and (min-width: 1050px) {
+    .container-info-2{
+        margin-top: 15%;
+    }
     .container{
         max-width: 930px;
         margin: auto;
@@ -221,6 +231,7 @@
         align-items: center;
         justify-content: flex-start;
         margin-left: -150px;
+        margin-top: -25px;
     }
     .sub-txt{
         margin-left:35px;

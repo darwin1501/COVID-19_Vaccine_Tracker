@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/breakpoints.css">
 </head>
 <body>
+    <div class="toogle-btn-container">
+        <label class="switch">
+            <input type="checkbox" id="darkmode-btn" value="on">
+            <span class="slider round"></span>
+        </label>
+    </div> 
 	<header>
             <div class="header-content">
                 <div class="header-txt-container">
@@ -27,7 +33,7 @@
                     </br>
                 </div>
             </div>
-        </header>
+    </header>
 	<div class="divider-top"></div>
     <div class="container">
         <main>
@@ -42,7 +48,7 @@
                 <!-- card -->
                 <div class="card total-vaccine">
                     <div class="total-vaccine-content">
-                        <div class="data-lbl-container">
+                        <div class="phase-lbl-container">
                             <p class="vaccine-data-lbl">
                                 Total Number of Possible Vaccines
                             </p>
@@ -55,35 +61,37 @@
                 </div>
                 <div class="phase-container">
                     <div class="phase-content">
-                        <p class="vaccine-data-lbl">Number of Possible Vaccines on Different Phases</p>
+                        <div class="phase-lbl-container">
+                        <p class="vaccine-data-lbl">Number of Possible Vaccines on Each Phases</p>
+                        </div>
                         <div class="divider"></div>
                         <div class="vacine-phases-container" id="vaccine-phases">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="divider"></div>
-            <div class="container-info-2 hidden" id="content-two">                
-                <!-- controls -->
+            <div class="container-info-2 hidden" id="content-two">              
+                <div class="divider"></div>
+                <div class="phase-title-container">
+                    <h2 class="phase-title">List of Possible Vaccines</h2>
+                </div>  
+                    <!-- controls -->
                 <div class="control">
-                	<div class="selection-container">
+                    <div class="selection-container">
                         <h2 class="control-lbl">
                             View By:
                         </h2>
-	                	<select class="selection" id="selection" onchange="viewOption()">
-	                        <option selected="selected" value="all">
-	                            All
-	                        </option>
-	                    </select>
-                	</div>
+                        <select class="selection" id="selection" onchange="viewOption()">
+                            <option selected="selected" value="all">
+                                All
+                            </option>
+                        </select>
+                    </div>
                 </div>
                 <div class="search-container">
                         <input type="text" name="vaccine" class="search-box" id="vaccineName" oninput="searchVaccine()" placeholder="Search Vaccine">
                 </div>
-                    <div class="divider"></div>
-                    <div class="phase-title-container">
-                    <h2 class="phase-title">List of Possible Vaccines</h2>
-                </div>
+                <p class="result-count" id="result-count"></p>
                 <!-- auto fit CSS Grid -->
                 <div class="vaccine-list-container" id="vaccine-list">
                 </div>
