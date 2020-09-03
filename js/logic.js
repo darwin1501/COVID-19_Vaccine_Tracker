@@ -302,32 +302,120 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 	const value = document.getElementById("darkmode-btn").value
 
-	//html
+	
     const html = document.querySelector('html');
-    //body
+    
     const body = document.querySelector('body');
+
+    const card = document.getElementsByClassName('card');
+
+    const divider = document.getElementsByClassName('divider');
+
+    const topDivider = document.getElementsByClassName('divider-top');
+
+    const headerTxt = document.getElementsByClassName('header-txt');
+
+    const phaseContent = document.getElementsByClassName('phase-content');
+    //sub text header
+    const subTxt = document.getElementsByClassName('sub-txt');
+
+    const thinCard = document.getElementsByClassName('thin-card');
+
+    const txtLink = document.getElementsByClassName('txt-link');
 
 	if(value === 'off'){
 		//when darkmode off
 		//add light remove dark
 		document.getElementById("darkmode-btn").value = 'on';
 
+		html.classList.add('html-bg-lht');
+		html.classList.remove('html-bg-drk');
+
 		body.classList.add('body-bg-lht');
 		body.classList.remove('body-bg-drk');
 
-		html.classList.add('html-bg-lht');
-		html.classList.remove('html-bg-drk');
+		card[0].classList.add('card-lht');
+		card[0].classList.remove('card-drk');
+
+		headerTxt[0].classList.add('header-txt-lht');
+		headerTxt[0].classList.remove('header-txt-drk');
+
+		phaseContent[0].classList.add('phase-content-lht');
+		phaseContent[0].classList.remove('phase-content-drk');
+
+		subTxt[0].classList.add('sub-txt-lht');
+		subTxt[0].classList.remove('sub-txt-drk');
+
+		// get all thin cards
+		for (let thinCardCount = 0; thinCardCount < thinCard.length; thinCardCount++) {
+
+			thinCard[thinCardCount].classList.add('thin-card-lht');
+			thinCard[thinCardCount].classList.remove('thin-card-drk');
+		};
+
+		txtLink[0].classList.add('txt-link-lht');
+		txtLink[0].classList.remove('txt-link-drk');
+
+		txtLink[1].classList.add('txt-link-lht');
+		txtLink[1].classList.remove('txt-link-drk');
+
+		// get all dividers
+		for (let dividerCount = 0; dividerCount < divider.length; dividerCount++) {
+
+			divider[dividerCount].classList.add('divider-lht');
+			divider[dividerCount].classList.remove('divider-drk');
+
+		};
+
+		topDivider[0].classList.add('divider-lht');
+		topDivider[0].classList.remove('divider-drk');
 
 	}else if(value === 'on'){
 		//when darkmode off
 		//add dark remove light
 		document.getElementById("darkmode-btn").value = 'off';
 
+		html.classList.add('html-bg-drk');
+		html.classList.remove('html-bg-lht');
+
 		body.classList.add('body-bg-drk');
 		body.classList.remove('body-bg-lht');
 
-		html.classList.add('html-bg-drk');
-		html.classList.remove('html-bg-lht');
+		card[0].classList.add('card-drk');
+		card[0].classList.remove('card-lht');
+
+		headerTxt[0].classList.add('header-txt-drk');
+		headerTxt[0].classList.remove('header-txt-lht');
+
+		phaseContent[0].classList.add('phase-content-drk');
+		phaseContent[0].classList.remove('phase-content-lht');
+
+		subTxt[0].classList.add('sub-txt-drk');
+		subTxt[0].classList.remove('sub-txt-lht');
+
+		// get all thin cards
+		for (let thinCardCount = 0; thinCardCount < thinCard.length; thinCardCount++) {
+
+			thinCard[thinCardCount].classList.add('thin-card-drk');
+			thinCard[thinCardCount].classList.remove('thin-card-lht');
+		};
+
+		txtLink[0].classList.add('txt-link-drk');
+		txtLink[0].classList.remove('txt-link-lht');
+
+		txtLink[1].classList.add('txt-link-drk');
+		txtLink[1].classList.remove('txt-link-lht');
+
+		// get all dividers
+		for (let dividerCount = 0; dividerCount < divider.length; dividerCount++) {
+
+			divider[dividerCount].classList.add('divider-drk');
+			divider[dividerCount].classList.remove('divider-lht');
+
+		};
+
+		topDivider[0].classList.add('divider-drk');
+		topDivider[0].classList.remove('divider-lht');
 
 	}
 	// console.log(value)

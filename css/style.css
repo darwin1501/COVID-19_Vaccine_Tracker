@@ -1,6 +1,7 @@
 :root {
 	--black: #595959;
-  --black-bg: #272822;
+  --black-bg: #171814;
+  --black-bg-l1: #272822;
   --black-l1: #999999;
   --grey-d0: #959595;
 	--grey1: #F3F3F4;
@@ -339,7 +340,12 @@ input:checked + .slider:before {
 /*flipping card style config END*/
 
 /*transitions START*/
-.body-bg-lht, .body-bg-drk, .html-bg-lht, .html-bg-drk{
+.body-bg-lht, .body-bg-drk, .card-lht, .card-drk, .divider-lht, .divider-drk, 
+.header-txt-lht, .header-txt-drk, .html-bg-lht, 
+.phase-content-lht, .phase-content-drk, 
+.html-bg-drk, .sub-txt-lht, .sub-txt-drk,
+.thin-card-lht, .thin-card-drk, 
+.txt-link-lht, .txt-link-drk{
   transition: 0.5s;
   transition-delay: 0.5s;
 }
@@ -347,17 +353,41 @@ input:checked + .slider:before {
 
 /*light mode design START*/
 
+.card-lht, .phase-content-lht, .thin-card-lht{
+  background-color: var(--white);
+}
+.divider-lht{
+  background-color: var(--grey2);
+}
+.header-txt-lht, .sub-txt-lht, .txt-link-lht{
+  color: var(--black);
+}
 .html-bg-lht, .body-bg-lht{
   background-color: var(--grey-l1);
+  color: var(--black);
 }
 /*light mode design END*/
 
 /*dark mode design START*/
 
+.card-drk, .phase-content-drk, .thin-card-drk{
+  background-color: var(--black-bg-l1);
+  box-shadow: none !important;
+}
+.divider-drk{
+  background-color: var(--black);
+}
+.header-txt-drk, .sub-txt-drk, .txt-link-drk{
+  color: var(--black-l1) !important;
+}
 .html-bg-drk, .body-bg-drk{
   background-color: var(--black-bg) !important;
+  color: var(--black-l1) !important;
 }
 
+.thin-card-drk{
+  border: solid var(--black) 1px;
+}
 /*dark mode design END*/
 
 
