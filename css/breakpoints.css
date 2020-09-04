@@ -54,7 +54,7 @@
         padding: 5% 5% 1% 5%;
     }
     .phase-title{
-        font-size: 16px;
+        font-size: 1em;
         text-align: center;
         font-weight: bold;
     }
@@ -119,7 +119,7 @@
     	margin: 10% 0 10% 0;
     }
     .vaccine-data-lbl{
-    	font-size: 14px;
+    	font-size: 1em;
     }
 
     .vacine-phases-container{
@@ -236,6 +236,9 @@
     .sub-txt{
         margin-left:35px;
         margin-top: -5px;
+    }
+    .sub-txt-left{
+        text-align: left !important;
     }
     .vaccine-data{
         font-size: 6em;

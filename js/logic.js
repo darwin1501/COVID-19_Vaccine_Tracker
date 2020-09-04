@@ -302,26 +302,49 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 	const value = document.getElementById("darkmode-btn").value
 
-	
     const html = document.querySelector('html');
     
     const body = document.querySelector('body');
 
     const card = document.getElementsByClassName('card');
 
+    const cardBack = document.getElementsByClassName('card__face--back');
+
+    const cardBackTxt = document.getElementsByClassName('back-txt');
+
+    const cardFront = document.getElementsByClassName('card__face--front');
+
+    const cardFrontTxt = document.getElementsByClassName('front-txt');
+
     const divider = document.getElementsByClassName('divider');
+
+    const footerTxt = document.getElementsByClassName('footer-lbl');
+
+    const footerBtn = document.getElementsByClassName('footer-btn');
+
+    const footerBrd = document.querySelector('footer');
 
     const topDivider = document.getElementsByClassName('divider-top');
 
     const headerTxt = document.getElementsByClassName('header-txt');
 
+    const option = document.querySelector('select');
+
     const phaseContent = document.getElementsByClassName('phase-content');
+
+    const searchBox = document.getElementsByClassName('search-box');
+
+    const selection =document.getElementById('selection');
     //sub text header
     const subTxt = document.getElementsByClassName('sub-txt');
+
+    const subFrontTxt = document.getElementsByClassName('sub-front-txt');
 
     const thinCard = document.getElementsByClassName('thin-card');
 
     const txtLink = document.getElementsByClassName('txt-link');
+
+    const vaccineList = document.getElementsByClassName('scene');
 
 	if(value === 'off'){
 		//when darkmode off
@@ -337,14 +360,77 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 		card[0].classList.add('card-lht');
 		card[0].classList.remove('card-drk');
 
+		// get all back flipping cards
+		for (let backCount = 0; backCount < cardBack.length; backCount++) {
+
+			cardBack[backCount].classList.add('card-back-lht');
+			cardBack[backCount].classList.remove('card-back-drk');
+
+		};
+
+		// get all text in back flipping cards
+		for (var backTxtCount = 0; backTxtCount < cardBackTxt.length; backTxtCount++) {
+
+			cardBackTxt[backTxtCount].classList.add('back-lht');
+			cardBackTxt[backTxtCount].classList.remove('back-drk');
+		};
+
+		// get all front flipping cards
+		for (var frontCount = 0; frontCount < cardFront.length; frontCount++) {
+
+			cardFront[frontCount].classList.add('card-front-lht');
+			cardFront[frontCount].classList.remove('card-front-drk');
+
+		};
+
+		// get all text in front flipping cards
+		for (var frontTxtCount = 0; frontTxtCount < cardFrontTxt.length; frontTxtCount++) {
+
+			cardFrontTxt[frontTxtCount].classList.add('front-lht');
+			cardFrontTxt[frontTxtCount].classList.remove('front-drk');
+		};
+
+		footerBrd.classList.add('footer-lht');
+    	footerBrd.classList.remove('footer-drk');
+
+		footerBtn[0].classList.add('footer-btn-lht');
+    	footerBtn[0].classList.remove('footer-btn-drk');
+
+		footerTxt[0].classList.add('footer-txt-lht');
+   	 	footerTxt[0].classList.remove('footer-txt-drk');
+
 		headerTxt[0].classList.add('header-txt-lht');
 		headerTxt[0].classList.remove('header-txt-drk');
+
+		// get all option
+    	for (var optionCount = 0; optionCount < option.length; optionCount++) {
+
+	    	option[optionCount].classList.add('option-lht');
+	    	option[optionCount].classList.remove('option-drk');
+
+    	};
 
 		phaseContent[0].classList.add('phase-content-lht');
 		phaseContent[0].classList.remove('phase-content-drk');
 
+		searchBox[0].classList.add('search-box-lht');
+		searchBox[0].classList.remove('search-box-drk');
+
+		selection.classList.add('selection-lht');
+		selection.classList.remove('selection-drk');
+
+		for (let subFrontCount = 0; subFrontCount < subFrontTxt.length; subFrontCount++) {
+
+			subFrontTxt[subFrontCount].classList.add('sub-front-lht');
+			subFrontTxt[subFrontCount].classList.add('sub-front-drk');
+
+		};
+
 		subTxt[0].classList.add('sub-txt-lht');
 		subTxt[0].classList.remove('sub-txt-drk');
+
+		subTxt[1].classList.add('sub-txt-lht');
+		subTxt[1].classList.remove('sub-txt-drk');
 
 		// get all thin cards
 		for (let thinCardCount = 0; thinCardCount < thinCard.length; thinCardCount++) {
@@ -353,11 +439,13 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 			thinCard[thinCardCount].classList.remove('thin-card-drk');
 		};
 
-		txtLink[0].classList.add('txt-link-lht');
-		txtLink[0].classList.remove('txt-link-drk');
+		// get all links
+		for (let linkCount = 0; linkCount < txtLink.length; linkCount++) {
 
-		txtLink[1].classList.add('txt-link-lht');
-		txtLink[1].classList.remove('txt-link-drk');
+			txtLink[linkCount].classList.add('txt-link-lht');
+			txtLink[linkCount].classList.remove('txt-link-drk');
+
+		};
 
 		// get all dividers
 		for (let dividerCount = 0; dividerCount < divider.length; dividerCount++) {
@@ -369,6 +457,12 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 		topDivider[0].classList.add('divider-lht');
 		topDivider[0].classList.remove('divider-drk');
+
+		for (let vaccineCount = 0; vaccineCount < vaccineList.length; vaccineCount++) {
+
+			vaccineList[vaccineCount].classList.remove('scene-drk')
+		};
+
 
 	}else if(value === 'on'){
 		//when darkmode off
@@ -384,14 +478,77 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 		card[0].classList.add('card-drk');
 		card[0].classList.remove('card-lht');
 
+		// get all back flipping cards
+		for (let backCount = 0; backCount < cardBack.length; backCount++) {
+
+			cardBack[backCount].classList.add('card-back-drk');
+			cardBack[backCount].classList.remove('card-back-lht');
+
+		};
+
+		// get all text in back flipping cards
+		for (var backTxtCount = 0; backTxtCount < cardBackTxt.length; backTxtCount++) {
+
+			cardBackTxt[backTxtCount].classList.add('back-drk');
+			cardBackTxt[backTxtCount].classList.remove('back-lht');
+		};
+
+		// get all front flipping cards
+		for (var frontCount = 0; frontCount < cardFront.length; frontCount++) {
+
+			cardFront[frontCount].classList.add('card-front-drk');
+			cardFront[frontCount].classList.remove('card-front-lht');
+
+		};
+
+		// get all text in front flipping cards
+		for (var frontTxtCount = 0; frontTxtCount < cardFrontTxt.length; frontTxtCount++) {
+
+			cardFrontTxt[frontTxtCount].classList.add('front-drk');
+			cardFrontTxt[frontTxtCount].classList.remove('front-lht');
+		};
+
+		footerBrd.classList.add('footer-drk');
+    	footerBrd.classList.remove('footer-lht');
+
+		footerBtn[0].classList.add('footer-btn-drk');
+    	footerBtn[0].classList.remove('footer-btn-lht');
+
+		footerTxt[0].classList.add('footer-txt-drk');
+   	 	footerTxt[0].classList.remove('footer-txt-lht');
+
 		headerTxt[0].classList.add('header-txt-drk');
 		headerTxt[0].classList.remove('header-txt-lht');
+
+		// get all option
+    	for (var optionCount = 0; optionCount < option.length; optionCount++) {
+
+	    	option[optionCount].classList.add('option-drk');
+	    	option[optionCount].classList.remove('option-lht');
+
+    	};
 
 		phaseContent[0].classList.add('phase-content-drk');
 		phaseContent[0].classList.remove('phase-content-lht');
 
+		searchBox[0].classList.add('search-box-drk');
+		searchBox[0].classList.remove('search-box-lht');
+
+		selection.classList.add('selection-drk');
+		selection.classList.remove('selection-lht');
+
+		for (let subFrontCount = 0; subFrontCount < subFrontTxt.length; subFrontCount++) {
+
+			subFrontTxt[subFrontCount].classList.add('sub-front-drk');
+			subFrontTxt[subFrontCount].classList.add('sub-front-lht');
+
+		};
+
 		subTxt[0].classList.add('sub-txt-drk');
 		subTxt[0].classList.remove('sub-txt-lht');
+
+		subTxt[1].classList.add('sub-txt-drk');
+		subTxt[1].classList.remove('sub-txt-lht');
 
 		// get all thin cards
 		for (let thinCardCount = 0; thinCardCount < thinCard.length; thinCardCount++) {
@@ -400,11 +557,14 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 			thinCard[thinCardCount].classList.remove('thin-card-lht');
 		};
 
-		txtLink[0].classList.add('txt-link-drk');
-		txtLink[0].classList.remove('txt-link-lht');
 
-		txtLink[1].classList.add('txt-link-drk');
-		txtLink[1].classList.remove('txt-link-lht');
+		// get all links
+		for (let linkCount = 0; linkCount < txtLink.length; linkCount++) {
+
+			txtLink[linkCount].classList.add('txt-link-drk');
+			txtLink[linkCount].classList.remove('txt-link-lht');
+
+		};
 
 		// get all dividers
 		for (let dividerCount = 0; dividerCount < divider.length; dividerCount++) {
@@ -416,6 +576,11 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 		topDivider[0].classList.add('divider-drk');
 		topDivider[0].classList.remove('divider-lht');
+
+		for (let vaccineCount = 0; vaccineCount < vaccineList.length; vaccineCount++) {
+
+			vaccineList[vaccineCount].classList.add('scene-drk')
+		};
 
 	}
 	// console.log(value)

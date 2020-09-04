@@ -4,6 +4,7 @@
   --black-bg-l1: #272822;
   --black-l1: #999999;
   --grey-d0: #959595;
+  --grey-d1: #E3E3E3;
 	--grey1: #F3F3F4;
 	--grey2: #e3e3e3;
   --grey-l1: #F9FAFB;
@@ -24,7 +25,7 @@ body, html{
 	align-items: center;
 }
 .control-lbl{
-  color: var(--black);
+  color: var(--black-l1);
 }
 .divider, .divider-top{
 	background-color: var(--grey2);
@@ -94,6 +95,9 @@ header, .control, .loading-container, .search-container, .sub-data-master-contai
 label{
   color: var(--grey-d0) !important;
 }
+.phase-txt{
+  color: var(--black-l1) !important;
+}
 .result-count{
   text-align: center;
   margin: 10% auto;
@@ -102,6 +106,7 @@ label{
   border: solid var(--grey1) 2px;
   box-shadow: 1px 1px 1px 1px var(--grey2);
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.1em;
 }
 .search-box:hover{
   border: solid var(--grey-d0) 2px;
@@ -122,15 +127,20 @@ label{
   justify-content: flex-end;
   align-items: center;
 }
-.txt-link, .sub-txt{
+.sub-txt, .txt-link{
 	color: var(--black);
-	cursor: pointer;
+}
+.txt-link{
+  cursor: pointer;
+  font-weight: bolder;
 }
 .vaccine-card{
 	background-color: var(--white);
 }
 .vaccine-data-lbl{
   text-align: center;
+  color: var(--black-l1) !important;
+  font-weight: bold;
 }
 
 /*loading animation config START*/
@@ -340,26 +350,51 @@ input:checked + .slider:before {
 /*flipping card style config END*/
 
 /*transitions START*/
-.body-bg-lht, .body-bg-drk, .card-lht, .card-drk, .divider-lht, .divider-drk, 
-.header-txt-lht, .header-txt-drk, .html-bg-lht, 
-.phase-content-lht, .phase-content-drk, 
-.html-bg-drk, .sub-txt-lht, .sub-txt-drk,
+.body-bg-lht, .body-bg-drk{
+/*  transition-delay: 0.5s;*/
+transition: 0.5s;
+}
+.card-lht, .card-drk,
+.card-back-lht, .card-back-drk,
+.card-front-lht, .card-front-drk,
+.divider-lht, .divider-drk, .footer-drk, .footer-btn-drk,
+.footer-lht, .footer-btn-drk, .header-txt-lht, 
+.header-txt-drk, .html-bg-lht, .option-lht, 
+.option-drk, .phase-content-lht, 
+.phase-content-drk, .html-bg-drk, .scene, 
+.scene-drk, .selection-drk-lht, .selection-drk, 
+.sub-txt-lht, .sub-txt-drk,
 .thin-card-lht, .thin-card-drk, 
 .txt-link-lht, .txt-link-drk{
   transition: 0.5s;
-  transition-delay: 0.5s;
+/*  transition-delay: 0.5s;*/
 }
 /*transitions END*/
 
 /*light mode design START*/
 
-.card-lht, .phase-content-lht, .thin-card-lht{
+.card-lht, .card-back-lht, .card-front-lht, .phase-content-lht, 
+.thin-card-lht, .search-box-lht, .selection-lht{
   background-color: var(--white);
 }
 .divider-lht{
   background-color: var(--grey2);
 }
-.header-txt-lht, .sub-txt-lht, .txt-link-lht{
+.footer-lht{
+  border-top: solid var(--grey2);
+}
+.footer-btn-lht{
+  color: var(--black);
+}
+.footer-btn-lht:hover{
+  background-color: var(--black);
+  box-shadow: 1px 1px 20px 2px var(--black-l1);
+  color: var(--white);
+}
+/*text color*/
+.footer-txt-lht, .back-lht, .front-lht, .header-txt-lht, .option-lht, 
+.search-box-lht, .selection-lht, .sub-front-lht, 
+.sub-txt-lht, .txt-link-lht{
   color: var(--black);
 }
 .html-bg-lht, .body-bg-lht{
@@ -370,23 +405,51 @@ input:checked + .slider:before {
 
 /*dark mode design START*/
 
-.card-drk, .phase-content-drk, .thin-card-drk{
+.card-drk, .card-back-drk, .card-front-drk, .phase-content-drk, .thin-card-drk, .search-box-drk, .selection-drk{
   background-color: var(--black-bg-l1);
   box-shadow: none !important;
 }
 .divider-drk{
   background-color: var(--black);
 }
-.header-txt-drk, .sub-txt-drk, .txt-link-drk{
+/*text color*/
+.back-drk, .front-drk, .header-txt-drk{
+  color: var(--white);
+}
+.footer-drk{
+  border-top: solid var(--black) !important;
+}
+.footer-btn-drk{
+  color: var(--white) !important;
+}
+.footer-btn-drk:hover{
+  color: var(--black) !important;
+  background-color: var(--white) !important;
+  box-shadow: none;
+}
+/*text color*/
+.footer-txt-drk, .option-drk, .search-box-drk, .selection-drk, 
+.sub-front-drk, .sub-txt-drk{
   color: var(--black-l1) !important;
 }
 .html-bg-drk, .body-bg-drk{
   background-color: var(--black-bg) !important;
-  color: var(--black-l1) !important;
+  color: var(--white) !important;
 }
-
+.scene-drk{
+  box-shadow: none !important;
+}
+.search-box-drk{
+  border: solid var(--black-bg) 2px !important;
+}
+.search-box-drk:hover{
+  border: solid var(--black) 2px !important;
+}
 .thin-card-drk{
   border: solid var(--black) 1px;
+}
+.txt-link-drk{
+  color: var(--white) !important;
 }
 /*dark mode design END*/
 
