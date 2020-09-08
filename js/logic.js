@@ -12,7 +12,7 @@ async function getData(){
 		mode: 'cors',
 		headers:{
 			'Access-Control-Request-Method': 'GET',
-			'Access-Control-Allow-Origin': 'https://disease.sh',
+			'Access-Control-Allow-Origin': 'disease.sh',
 			'Access-Control-Allow-Credentials': 'true'
 		}
 	});
