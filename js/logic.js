@@ -11,7 +11,7 @@ async function getData(){
 		method: 'GET',
 		mode: 'cors',
 		headers:{
-			'Access-Control-Allow-Origin': 'https://covid19vaccine.netlify.app/',
+			'Access-Control-Allow-Origin': 'https://disease.sh',
 			'Access-Control-Allow-Credentials': 'true'
 		}
 	});
