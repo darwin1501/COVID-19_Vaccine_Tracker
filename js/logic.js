@@ -8,12 +8,12 @@ async function getData(){
 	// const fetchData = await fetch(vaccineData);
 
 	const fetchData = await fetch(vaccineData, {
-		method: 'GET',
-		mode: 'cors',
+		// method: 'GET',
+		// mode: 'cors',
 		headers:{
-			'Access-Control-Request-Method': 'GET',
+			// 'Access-Control-Request-Method': 'GET',
 			'Access-Control-Allow-Origin': 'https://covid19vaccine.netlify.app',
-			'Access-Control-Allow-Credentials': 'true'
+			// 'Access-Control-Allow-Credentials': 'true'
 		}
 	});
 
