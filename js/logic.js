@@ -5,17 +5,17 @@ const vaccineData = 'https://disease.sh/v3/covid-19/vaccine';
 
 async function getData(){
 
-	const fetchData = await fetch(vaccineData);
+	// const fetchData = await fetch(vaccineData);
 
-	// const fetchData = await fetch(vaccineData, {
-	// 	// method: 'GET',
-	// 	// mode: 'cors',
-	// 	headers:{
-	// 		// 'Access-Control-Request-Method': 'GET',
-	// 		'Access-Control-Allow-Origin': 'https://covid19vaccine.netlify.app',
-	// 		// 'Access-Control-Allow-Credentials': 'true'
-	// 	}
-	// });
+	const fetchData = await fetch(vaccineData, {
+		method: 'GET',
+		mode: 'cors',
+		headers:{
+			'Access-Control-Request-Method': 'GET',
+			'Access-Control-Allow-Origin': 'https://covid19vaccine.netlify.app',
+			'Access-Control-Allow-Credentials': 'true'
+		}
+	});
 
 	// hide content while loading data
 	const contentOne = document.getElementById('content-one');
