@@ -12,7 +12,7 @@ async function getData(){
 		mode: 'cors',
 		headers:{
 			'Access-Control-Request-Method': 'GET',
-			'Access-Control-Allow-Origin': 'https://covid19vaccine.netlify.app',
+			'Access-Control-Allow-Origin': 'https://covid19vaccine.netlify.app/',
 			'Access-Control-Allow-Credentials': 'true'
 		}
 	});
