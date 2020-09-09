@@ -1,23 +1,18 @@
 // header("Access-Control-Allow-Origin: *");
-
+const cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 
 const vaccineData = 'https://disease.sh/v3/covid-19/vaccine';
 
-async function getData(){
 
-	// const fetchData = await fetch(vaccineData);
+ // async funtion
+ 	async function doCORSRequest(options, printResult) {
+ 		var dataURL = await options.url;
+ 		var CORS = await cors_api_url;
+    var x = new XMLHttpRequest();
 
-	const fetchData = await fetch(vaccineData, {
-		method: 'GET',
-		mode: 'cors',
-		headers:{
-			'Access-Control-Request-Method': 'GET',
-			'Access-Control-Allow-Origin': 'https://covid19vaccine.netlify.app/',
-			'Access-Control-Allow-Credentials': 'true'
-		}
-	});
+    //start loading animation here
 
-	// hide content while loading data
+    // hide content while loading data
 	const contentOne = document.getElementById('content-one');
 
 	const contentTwo =document.getElementById('content-two');
@@ -26,29 +21,33 @@ async function getData(){
 
 	contentTwo.classList.add('hidden');
 
-	if(fetchData.ok){
+    x.open(options.method, CORS + dataURL);
+    x.onload = x.onerror = function() {
 
-		const vaccineJson = await fetchData.json();
+    //stop loading animation here
 
-		//set to session
-		sessionStorage.vaccine = JSON.stringify( vaccineJson );
+    const loading = document.getElementById('loading');
 
-		getVaccineInfo();
+	loading.classList.add('hidden');
 
-		const loading = document.getElementById('loading');
+	contentOne.classList.remove('hidden');
 
-		loading.classList.add('hidden');
+	contentTwo.classList.remove('hidden');
 
-		contentOne.classList.remove('hidden');
+      printResult(x.responseText);
+    };
 
-		contentTwo.classList.remove('hidden');
+    x.send(options.data);
+  }
+  	doCORSRequest({
+        method: 'GET',
+        url: vaccineData,
+      }, async function printResult(result) {
 
-	}else{
-		console.log( "HTTP-Error: " + vaccineData.status );
-	}
-}
+        sessionStorage.vaccine = await result
 
-getData()
+        getVaccineInfo();
+      });
 
 const getVaccineInfo = (()=>{
 
