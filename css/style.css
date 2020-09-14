@@ -305,7 +305,7 @@ input:checked + .slider:before {
 }
 .card__face--front {
   background: var(--white);
-  overflow-y: hidden;
+/*  overflow-y: hidden;*/
 }
 .card__face--back {
   background: var(--white);
