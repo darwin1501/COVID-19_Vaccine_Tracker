@@ -159,10 +159,10 @@ const getVaccineInfo = (()=>{
 			institutions.push(institutionsList[institutionsCount]);
 		}
 		//get all fundings
-		for(let fundingCount = 0; fundingCount < fundingList.length; fundingCount++){
-			// console.log(sponsorsList[sponsorsCount]);
-			funding.push(fundingList[fundingCount]);
-		}
+		// for(let fundingCount = 0; fundingCount < fundingList.length; fundingCount++){
+		// 	// console.log(sponsorsList[sponsorsCount]);
+		// 	funding.push(fundingList[fundingCount]);
+		// }
 
 		const vaccineInfoTemplate =`
 		<div class="scene scene--card ${classPhase} ${classVaccineName}">
@@ -191,9 +191,9 @@ const getVaccineInfo = (()=>{
 					    <br>
 					    <br>
 					    <label>Institutions:</label> ${institutions}
-					    <br>
-					    <br>
-					    <label>Funding:</label> ${funding}
+					    <!-- <br>
+					     <br>
+					     <label>Funding:</label> ${funding} -->
 					</p>
 					</div>
 			   </div>
