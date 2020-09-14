@@ -139,8 +139,8 @@ label{
 }
 .vaccine-data-lbl{
   text-align: center;
-  color: var(--black-l1) !important;
-  font-weight: bold;
+  color: var(--black) !important;
+/*  font-weight: bold;*/
 }
 
 /*loading animation config START*/
@@ -279,6 +279,7 @@ input:checked + .slider:before {
   color: var(--black);
   text-align: left;
   position: absolute;
+  padding-bottom: 10%;
 }
 .card-flipping{
   width: 100%;
@@ -315,6 +316,7 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
 /*  margin: 5%;*/
+
 } 
 .back-container{
   margin-top: -90%;
@@ -384,7 +386,7 @@ transition: 0.5s;
 .footer-lht{
   border-top: solid var(--grey2);
 }
-.footer-btn-lht{
+.footer-btn-lht, .vaccine-data-lht{
   color: var(--black);
 }
 .footer-btn-lht:hover{
@@ -430,7 +432,7 @@ transition: 0.5s;
 }
 /*text color*/
 .footer-txt-drk, .option-drk, .search-box-drk, .selection-drk, 
-.sub-front-drk, .sub-txt-drk{
+.sub-front-drk, .sub-txt-drk, .vaccine-data-drk{
   color: var(--black-l1) !important;
 }
 .html-bg-drk, .body-bg-drk{

@@ -356,6 +356,8 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
     const vaccineList = document.getElementsByClassName('scene');
 
+    const vaccineDataLbl = document.getElementsByClassName('vaccine-data-lbl');
+
 	if(value === 'off'){
 		//when darkmode off
 		//add light remove dark
@@ -467,6 +469,13 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 		topDivider[0].classList.add('divider-lht');
 		topDivider[0].classList.remove('divider-drk');
+
+		//get all vaccine data lbl
+		for (let vaccineLblCount = 0;  vaccineLblCount < vaccineDataLbl.length;  vaccineLblCount++) {
+
+			vaccineDataLbl[vaccineLblCount].classList.add('vaccine-data-lht');
+			vaccineDataLbl[vaccineLblCount].classList.remove('vaccine-data-drk');
+		};
 
 		for (let vaccineCount = 0; vaccineCount < vaccineList.length; vaccineCount++) {
 
@@ -586,6 +595,13 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 		topDivider[0].classList.add('divider-drk');
 		topDivider[0].classList.remove('divider-lht');
+
+				//get all vaccine data lbl
+		for (let vaccineLblCount = 0;  vaccineLblCount < vaccineDataLbl.length;  vaccineLblCount++) {
+
+			vaccineDataLbl[vaccineLblCount].classList.add('vaccine-data-drk');
+			vaccineDataLbl[vaccineLblCount].classList.remove('vaccine-data-lht');
+		};
 
 		for (let vaccineCount = 0; vaccineCount < vaccineList.length; vaccineCount++) {
 
