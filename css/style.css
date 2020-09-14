@@ -279,7 +279,6 @@ input:checked + .slider:before {
   color: var(--black);
   text-align: left;
   position: absolute;
-  margin: 5%;
 }
 .card-flipping{
   width: 100%;
@@ -306,6 +305,7 @@ input:checked + .slider:before {
 }
 .card__face--front {
   background: var(--white);
+  overflow-y: hidden;
 }
 .card__face--back {
   background: var(--white);
@@ -314,6 +314,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5%;
 } 
 .back-container{
   margin-top: -90%;
