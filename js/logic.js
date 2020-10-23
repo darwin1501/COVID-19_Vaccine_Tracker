@@ -208,11 +208,15 @@ const getVaccineInfo = (()=>{
 
 	const cardFlipping = document.getElementsByClassName('card-flipping');
 
+	const backCard = document.getElementsByClassName('card__face card__face--back');
+
 	for(let element = 0; element < cardFlipping.length; element++){
 
 		cardFlipping[element].addEventListener( 'click', function() {
 
 	  		cardFlipping[element].classList.toggle('is-flipped');
+
+	  		backCard[element].classList.toggle('scrollable')
 		});
 	}
 })

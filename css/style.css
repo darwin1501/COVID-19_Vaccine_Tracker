@@ -102,6 +102,9 @@ label{
   text-align: center;
   margin: 10% auto;
 }
+.scrollable{
+  overflow-y: scroll !important;
+}
 .search-box{
   border: solid var(--grey1) 2px;
   box-shadow: 1px 1px 1px 1px var(--grey2);
@@ -310,8 +313,8 @@ input:checked + .slider:before {
 }
 .card__face--back {
   background: var(--white);
+  overflow-y: hidden;
   transform: rotateY(180deg);
-  overflow-y: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
