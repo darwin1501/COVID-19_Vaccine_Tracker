@@ -71,6 +71,9 @@ footer{
   color: var(--black);
   font-size: 1em;
  }
+ .footer-link{
+  text-decoration: none !important;
+ }
 .footer-content{
   display: flex;
   padding: 20px;
