@@ -1,17 +1,57 @@
 // header("Access-Control-Allow-Origin: *");
-const cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+// const cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 
-const vaccineData = 'https://disease.sh/v3/covid-19/vaccine';
+// const vaccineData = 'https://disease.sh/v3/covid-19/vaccine';
 
 
- // async funtion
- 	async function doCORSRequest(options, printResult) {
- 		var dataURL = await options.url;
- 		var CORS = await cors_api_url;
-    var x = new XMLHttpRequest();
+ // async function with CORS request
+//  	async function doCORSRequest(options, printResult) {
+//  		var dataURL = await options.url;
+//  		var CORS = await cors_api_url;
+//     var x = new XMLHttpRequest();
 
-    //start loading animation here
+//     //start loading animation here
 
+//     // hide content while loading data
+// 	const contentOne = document.getElementById('content-one');
+
+// 	const contentTwo =document.getElementById('content-two');
+
+// 	contentOne.classList.add('hidden');
+
+// 	contentTwo.classList.add('hidden');
+
+//     x.open(options.method, CORS + dataURL);
+//     x.onload = x.onerror = function() {
+
+//     //stop loading animation here
+
+//     const loading = document.getElementById('loading');
+
+// 	loading.classList.add('hidden');
+
+// 	contentOne.classList.remove('hidden');
+
+// 	contentTwo.classList.remove('hidden');
+
+//       printResult(x.responseText);
+//     };
+
+//     x.send(options.data);
+//   }
+//   	doCORSRequest({
+//         method: 'GET',
+//         url: vaccineData,
+//       }, async function printResult(result) {
+
+//         sessionStorage.vaccine = await result
+
+//         getVaccineInfo();
+//       });
+
+// normal fetching of API
+async function requestVaccineAPI() {
+    let response = await fetch('https://disease.sh/v3/covid-19/vaccine');
     // hide content while loading data
 	const contentOne = document.getElementById('content-one');
 
@@ -21,37 +61,28 @@ const vaccineData = 'https://disease.sh/v3/covid-19/vaccine';
 
 	contentTwo.classList.add('hidden');
 
-    x.open(options.method, CORS + dataURL);
-    x.onload = x.onerror = function() {
+    if (response.status === 200) {
 
-    //stop loading animation here
+		//stop loading animation here
 
-    const loading = document.getElementById('loading');
+		const loading = document.getElementById('loading');
 
-	loading.classList.add('hidden');
+		loading.classList.add('hidden');
+	
+		contentOne.classList.remove('hidden');
+	
+		contentTwo.classList.remove('hidden');
+        //set json
+        vaccine = await response.json();
 
-	contentOne.classList.remove('hidden');
+		getVaccineInfo(vaccine);
+    }
+}
+requestVaccineAPI()
 
-	contentTwo.classList.remove('hidden');
+const getVaccineInfo = ((vaccine)=>{
 
-      printResult(x.responseText);
-    };
-
-    x.send(options.data);
-  }
-  	doCORSRequest({
-        method: 'GET',
-        url: vaccineData,
-      }, async function printResult(result) {
-
-        sessionStorage.vaccine = await result
-
-        getVaccineInfo();
-      });
-
-const getVaccineInfo = (()=>{
-
-	const vaccine = JSON.parse( sessionStorage.vaccine );
+	// const vaccine = JSON.parse( sessionStorage.vaccine );
 
 	const totalCandidates = vaccine.totalCandidates;
 
