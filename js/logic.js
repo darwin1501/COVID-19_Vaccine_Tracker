@@ -369,7 +369,7 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
     const footerBrd = document.querySelector('footer');
 
-    const topDivider = document.getElementsByClassName('divider-top');
+    // const topDivider = document.getElementsByClassName('divider-top');
 
     const headerTxt = document.getElementsByClassName('header-txt');
 
@@ -393,6 +393,9 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
     const vaccineDataLbl = document.getElementsByClassName('vaccine-data-lbl');
 
+	const headerContainer = document.getElementById('header-container');
+
+
 	if(value === 'off'){
 		//when darkmode off
 		//add light remove dark
@@ -400,6 +403,9 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 		html.classList.add('html-bg-lht');
 		html.classList.remove('html-bg-drk');
+
+		headerContainer.classList.add('header-container-lht');
+		headerContainer.classList.remove('header-container-drk');
 
 		body.classList.add('body-bg-lht');
 		body.classList.remove('body-bg-drk');
@@ -502,8 +508,8 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 		};
 
-		topDivider[0].classList.add('divider-lht');
-		topDivider[0].classList.remove('divider-drk');
+		// topDivider[0].classList.add('divider-lht');
+		// topDivider[0].classList.remove('divider-drk');
 
 		//get all vaccine data lbl
 		for (let vaccineLblCount = 0;  vaccineLblCount < vaccineDataLbl.length;  vaccineLblCount++) {
@@ -525,6 +531,9 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 		html.classList.add('html-bg-drk');
 		html.classList.remove('html-bg-lht');
+
+		headerContainer.classList.add('header-container-drk');
+		headerContainer.classList.remove('header-container-lht');
 
 		body.classList.add('body-bg-drk');
 		body.classList.remove('body-bg-lht');
@@ -628,8 +637,8 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
 		};
 
-		topDivider[0].classList.add('divider-drk');
-		topDivider[0].classList.remove('divider-lht');
+		// topDivider[0].classList.add('divider-drk');
+		// topDivider[0].classList.remove('divider-lht');
 
 				//get all vaccine data lbl
 		for (let vaccineLblCount = 0;  vaccineLblCount < vaccineDataLbl.length;  vaccineLblCount++) {
