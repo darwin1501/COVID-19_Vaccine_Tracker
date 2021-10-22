@@ -75,6 +75,8 @@ async function requestVaccineAPI() {
         //set json
         vaccine = await response.json();
 
+		window.sessionStorage.vaccine = JSON.stringify(vaccine);
+
 		getVaccineInfo(vaccine);
     }
 }
@@ -91,8 +93,6 @@ const getVaccineInfo = ((vaccine)=>{
 	const totalVacTxt =  document.getElementById('vaccine-data');
 
 	totalVacTxt.innerHTML = totalCandidates;
-
-	console.log(vaccine);
 
 	//vaccine phases
 	for (phases = 0; phases < vaccinePhases.length; phases++) {
@@ -298,8 +298,11 @@ const searchVaccine = (()=>{
 
 	resultCount.classList.add('hidden')
 
+	// console.log(sessionStorage.vaccine)
+
 	//get data
-	const vaccine = JSON.parse( sessionStorage.vaccine );
+	const vaccine = JSON.parse(window.sessionStorage.vaccine)
+	
 	//run the for loop and look for every string that matches the user input
 	for (let vaccineData = 0; vaccineData < vaccine.data.length; vaccineData++) {
 
