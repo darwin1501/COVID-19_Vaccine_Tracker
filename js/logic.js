@@ -51,34 +51,34 @@
 
 // normal fetching of API
 async function requestVaccineAPI() {
-    let response = await fetch('https://disease.sh/v3/covid-19/vaccine');
-    // hide content while loading data
+	
+	// start loadiing animation
+	const loading = document.getElementById('loading');
 	const contentOne = document.getElementById('content-one');
-
 	const contentTwo =document.getElementById('content-two');
 
 	contentOne.classList.add('hidden');
-
 	contentTwo.classList.add('hidden');
 
-    if (response.status === 200) {
-
-		//stop loading animation here
-
-		const loading = document.getElementById('loading');
-
-		loading.classList.add('hidden');
+	// api request
+	let countryInfo = await fetch('https://corona.lmao.ninja/v3/covid-19/countries');
+	let vaccineCoverageOnCountry = await fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage/countries?lastdays=5&fullData=true');
+    let vaccineInfo = await fetch('https://disease.sh/v3/covid-19/vaccine');
 	
-		contentOne.classList.remove('hidden');
-	
-		contentTwo.classList.remove('hidden');
+	// 
+    if (vaccineInfo.status === 200) {
         //set json
-        vaccine = await response.json();
+        vaccine = await vaccineInfo.json();
 
 		window.sessionStorage.vaccine = JSON.stringify(vaccine);
 
 		getVaccineInfo(vaccine);
     }
+
+	// stop loading animation	
+	loading.classList.add('hidden');
+	contentOne.classList.remove('hidden');
+	contentTwo.classList.remove('hidden');
 }
 requestVaccineAPI()
 
