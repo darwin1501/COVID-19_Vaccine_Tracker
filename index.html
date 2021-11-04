@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/breakpoints.css">
 </head>
 <body>
-    <div class="header-container" id="header-container">
+<div class="header-container" id="header-container">
     <div class="toogle-btn-container">
         <label class="switch">
             <input type="checkbox" id="darkmode-btn" value="on">
@@ -49,6 +49,24 @@
             <div class="loading-container" id="loading">
                 <div class="lds-facebook">
                     <div></div><div></div><div></div>
+                </div>
+            </div>
+            <!-- country selection -->
+            <div class="selection-container">
+                <select name="country" id="country" class="selection">
+                    <option selected="selected">Afghanistan</option>
+                    <option>Singapore</option>
+                    <option>Malaysia</option>
+                </select>
+            </div>
+            <!-- flex container -->
+            <div class="charts-container">
+                <div class="card pie-chart-card">
+                    <p>pie chart</p>
+                    <canvas id="pieChart" class="pie-chart"></canvas>
+                </div>
+                <div class="card line-chart-card">
+                    <p>line chart</p>
                 </div>
             </div>
             <!-- css grid container -->
@@ -121,8 +139,11 @@
                     Darwin
                 </p>
             </div>
+        </a>
          </div>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+<script src="js/data_chart.js"></script>
 <script src="js/logic.js"></script>
 </body>
 </html>

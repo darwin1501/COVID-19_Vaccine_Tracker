@@ -10,6 +10,13 @@
     .card__face--front, .card__face--back, .scene{
         border-radius: 10px;
     }
+    .charts-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        width: 100%;
+    }
+
     .container{
         padding-bottom: 25%;
     }
@@ -43,11 +50,21 @@
     .loading-container{
         margin-top: 1%;
     }
+    .line-chart-card, .pie-chart-card{
+        width: 90%;
+        height: auto;
+        margin: auto auto 10% auto;
+        padding: 10px;
+    }
     .phase-container{
         grid-row: 2 / -1;
     }
     .phase-content{
         padding-top: -10%;
+    }
+    .pie-chart{
+        width: 100%;
+        height: auto;
     }
     .vacine-phases-container{
         padding: 0 5% 15% 5%;

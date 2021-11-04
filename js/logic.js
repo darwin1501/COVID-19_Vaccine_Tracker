@@ -61,10 +61,17 @@ async function requestVaccineAPI() {
 	contentTwo.classList.add('hidden');
 
 	// api request
-	let countryInfo = await fetch('https://corona.lmao.ninja/v3/covid-19/countries');
-	let vaccineCoverageOnCountry = await fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage/countries?lastdays=5&fullData=true');
+	let countryInfo = await fetch('https://corona.lmao.ninja/v3/covid-19/countries')
+	.then(response => response.json())
+	.then(data => data);
+
+	let vaccineCoverageOnCountry = await fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage/countries?lastdays=5&fullData=true')
+	.then(response => response.json())
+	.then(data => data);
+
     let vaccineInfo = await fetch('https://disease.sh/v3/covid-19/vaccine');
 	
+	console.log(vaccineCoverageOnCountry)
 	// 
     if (vaccineInfo.status === 200) {
         //set json
