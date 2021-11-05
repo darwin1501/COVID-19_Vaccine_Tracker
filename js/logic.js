@@ -61,9 +61,18 @@ async function requestVaccineAPI() {
 	contentTwo.classList.add('hidden');
 
 	// api request
-	let countryInfo = await fetch('https://corona.lmao.ninja/v3/covid-19/countries')
+
+	// let globalInfo = await fetch('https://corona.lmao.ninja/v3/covid-19/all')
+	// .then(response => response.json())
+	// .then(data => data);
+
+	let vaccineCoverageGlobal = await fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage?lastdays=5&fullData=true')
 	.then(response => response.json())
 	.then(data => data);
+
+	// let covid19OnCoutries = await fetch('https://corona.lmao.ninja/v3/covid-19/countries')
+	// .then(response => response.json())
+	// .then(data => data);
 
 	let vaccineCoverageOnCountry = await fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage/countries?lastdays=5&fullData=true')
 	.then(response => response.json())
@@ -71,7 +80,6 @@ async function requestVaccineAPI() {
 
     let vaccineInfo = await fetch('https://disease.sh/v3/covid-19/vaccine');
 	
-	console.log(vaccineCoverageOnCountry)
 	// 
     if (vaccineInfo.status === 200) {
         //set json
@@ -82,12 +90,65 @@ async function requestVaccineAPI() {
 		getVaccineInfo(vaccine);
     }
 
+	// set session storage
+	window.sessionStorage.vaccineCoverageGlobal = JSON.stringify(vaccineCoverageGlobal);
+	window.sessionStorage.vaccineCoverageOnCountry = JSON.stringify(vaccineCoverageOnCountry);
 	// stop loading animation	
 	loading.classList.add('hidden');
 	contentOne.classList.remove('hidden');
 	contentTwo.classList.remove('hidden');
+
+	loadCountryInSelection(vaccineCoverageOnCountry);
+
+	// set the global vaccine dose as default value for the vaccine doses and line chart.
+	displayGlobalVaccineDose();
 }
 requestVaccineAPI()
+
+
+const getVaccineCoverage = (()=>{
+	// get selected
+	const selected = document.getElementById('countrySelection').value;
+	
+	if(selected === 'Global'){
+		// load global data
+		displayGlobalVaccineDose();
+	}else{
+		// load local
+		displayLocalVaccineDose(selected);
+	}	
+})
+
+const displayGlobalVaccineDose = (()=>{
+
+	const formatNumber = Intl.NumberFormat();
+	const vaccineCoverageGlobal = JSON.parse(window.sessionStorage.vaccineCoverageGlobal);
+	// get the latest vaccination data and display it.
+	document.getElementById('vaccineDoseCount').innerHTML = formatNumber.format(vaccineCoverageGlobal.pop().total)
+})
+
+const displayLocalVaccineDose = ((selected)=>{
+
+	const formatNumber = Intl.NumberFormat();
+	const vaccineCoverageOnCountry = JSON.parse(window.sessionStorage.vaccineCoverageOnCountry);
+	// search for countries
+	const getCountry = vaccineCoverageOnCountry.filter((data)=> data.country === selected);
+	const getLatestVaccineDoseCount = getCountry[0].timeline.pop();
+
+	document.getElementById('vaccineDoseCount').innerHTML = formatNumber.format(getLatestVaccineDoseCount.total)
+})
+
+// event listener for selection
+document.getElementById('countrySelection').addEventListener("change",getVaccineCoverage)
+
+const loadCountryInSelection = ((vaccineCoverageOnCountry)=>{
+	// create loop the load country in selection
+	const countrySelection = document.getElementById('countrySelection')
+	for (const data of vaccineCoverageOnCountry) {
+		let countryOption = `<option value="${data.country}">${data.country}</option>`;
+		countrySelection.insertAdjacentHTML('beforeend',countryOption);
+	}
+})
 
 const getVaccineInfo = ((vaccine)=>{
 
