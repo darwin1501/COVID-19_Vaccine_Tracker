@@ -53,17 +53,15 @@
             </div>
             <!-- country selection -->
             <div class="selection-container">
-                <select name="country" id="country" class="selection">
-                    <option selected="selected">Afghanistan</option>
-                    <option>Singapore</option>
-                    <option>Malaysia</option>
+                <select name="country" id="countrySelection" class="selection">
+                     <option selected="selected">Global</option>
                 </select>
             </div>
             <!-- flex container -->
             <div class="charts-container">
-                <div class="card pie-chart-card">
-                    <p>pie chart</p>
-                    <canvas id="pieChart" class="pie-chart"></canvas>
+                <div class="card vaccine_dose_card">
+                    <p>Total Vaccine Doses</p>
+                    <p id="vaccineDoseCount"></p>
                 </div>
                 <div class="card line-chart-card">
                     <p>line chart</p>
