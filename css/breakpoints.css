@@ -50,7 +50,7 @@
     .loading-container{
         margin-top: 1%;
     }
-    .line-chart-card, .pie-chart-card{
+    .line-chart-card, .vaccine_dose_card{
         width: 90%;
         height: auto;
         margin: auto auto 10% auto;
