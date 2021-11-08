@@ -50,21 +50,21 @@
     .loading-container{
         margin-top: 1%;
     }
-    .line-chart-card, .vaccine_dose_card{
+    .line-chart{
+        width: 100%;
+        height: auto;
+    }
+    .line-chart-card, .vaccine-dose-card{
         width: 90%;
         height: auto;
         margin: auto auto 10% auto;
-        padding: 10px;
+        padding: 1rem;
     }
     .phase-container{
         grid-row: 2 / -1;
     }
     .phase-content{
         padding-top: -10%;
-    }
-    .pie-chart{
-        width: 100%;
-        height: auto;
     }
     .vacine-phases-container{
         padding: 0 5% 15% 5%;

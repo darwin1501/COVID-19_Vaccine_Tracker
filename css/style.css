@@ -10,6 +10,23 @@
   --grey-l1: #F9FAFB;
 	--white: #FFFFFF;
 }
+/*!vaccine count card */
+.vaccine-count{
+  text-align: center;
+  /* text-lg */
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-bottom:  0.5rem;
+}
+.vaccine-count-lbl{
+  font-weight: 400;
+  text-align: center;
+}
+/* ------- */
+p{
+  margin: 0;
+}
 body, html{
 	font-family: "Courier New", Courier, monospace;
 	/*background-color: var(--grey1);*/
