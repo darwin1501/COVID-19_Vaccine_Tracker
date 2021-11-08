@@ -4,7 +4,7 @@ var lineChartConfig = new Chart(lineChart, {
     data: {
         labels: [],
         datasets: [{
-            label: 'Vaccine Dose Frequency',
+            label: 'Vaccine Dose',
             data: [],
             fill: false,
             borderColor: [
