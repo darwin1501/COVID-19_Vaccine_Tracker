@@ -23,6 +23,10 @@
   font-weight: 400;
   text-align: center;
 }
+.line-chart-lbl{
+  font-weight: 400;
+  text-align: left;
+}
 /* ------- */
 p{
   margin: 0;
@@ -106,7 +110,7 @@ header, .control, .loading-container, .search-container, .sub-data-master-contai
   background-color: white;
   border-bottom: .5px solid #d8d8d8;
   padding: 1% 2%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .header-content{
 	width: 90%;
