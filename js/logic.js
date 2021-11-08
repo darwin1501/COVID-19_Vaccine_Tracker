@@ -61,17 +61,9 @@ async function requestVaccineAPI() {
 	contentTwo.classList.add('hidden');
 
 	// api request
-
-	// let globalInfo = await fetch('https://corona.lmao.ninja/v3/covid-19/all')
-	// .then(response => response.json())
-	// .then(data => data);
 	let vaccineCoverageGlobal = await fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage?lastdays=7&fullData=true')
 	.then(response => response.json())
 	.then(data => data);
-
-	// let covid19OnCoutries = await fetch('https://corona.lmao.ninja/v3/covid-19/countries')
-	// .then(response => response.json())
-	// .then(data => data);
 
 	let vaccineCoverageOnCountry = await fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage/countries?lastdays=7&fullData=true')
 	.then(response => response.json())
@@ -86,10 +78,10 @@ async function requestVaccineAPI() {
 
 		window.sessionStorage.vaccine = JSON.stringify(vaccine);
 
+		getVaccineInfo(vaccine);
     }
 
 	// set session storage
-	// window.sessionStorage.vaccineCoverageGlobal = JSON.stringify(vaccineCoverageGlobal);
 	window.sessionStorage.vaccineCoverageGlobal = JSON.stringify(vaccineCoverageGlobal);
 	window.sessionStorage.vaccineCoverageOnCountry = JSON.stringify(vaccineCoverageOnCountry);
 	// stop loading animation	
@@ -101,8 +93,6 @@ async function requestVaccineAPI() {
 
 	// set the global vaccine dose as default value for the vaccine doses and line chart.
 	displayGlobalVaccineDose();
-
-	
 }
 requestVaccineAPI()
 
@@ -155,9 +145,9 @@ const loadCountryInSelection = ((vaccineCoverageOnCountry)=>{
 	}
 })
 
-const getVaccineInfo = ((vaccine)=>{
+const getVaccineInfo = (()=>{
 
-	// const vaccine = JSON.parse( sessionStorage.vaccine );
+	const vaccine = JSON.parse( sessionStorage.vaccine );
 
 	const totalCandidates = vaccine.totalCandidates;
 
