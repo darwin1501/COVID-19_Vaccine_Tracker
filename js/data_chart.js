@@ -1,16 +1,3 @@
-// const renderLineChart = ((vaccineCoverage)=>{
-
-// let dates = [];
-// let dailyVaccineCount = [];    
-
-// for (const data of vaccineCoverage) {
-//     dailyVaccineCount.push(data.daily);
-//     dates.push(data.date);
-// }
-
-
-// })
-
 const lineChart = document.getElementById('lineChart').getContext('2d');
 var lineChartConfig = new Chart(lineChart, {
     type: 'line',
@@ -34,14 +21,6 @@ var lineChartConfig = new Chart(lineChart, {
         }
     }
 });
-
-// function addData(chart, label, data) {
-//     chart.data.labels.push(label);
-//     chart.data.datasets.forEach((dataset) => {
-//         dataset.data.push(data);
-//     });
-//     chart.update();
-// }
 
 const loadDataInChart = ((chart, vaccineCoverage)=>{
 
