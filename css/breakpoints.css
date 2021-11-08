@@ -15,6 +15,7 @@
         flex-direction: column;
         margin-top: 10%;
         width: 100%;
+        row-gap: 1rem;
     }
 
     .container{
@@ -24,7 +25,7 @@
         display: grid;
         grid-template: 25% 25% 50% 50% / repeat(1, 1fr);
         grid-gap: 20px;
-        padding: 5% 0 25% 0;
+        padding: 10% 0 25% 0;
     }
     .control-lbl{
         margin: 8px 5px 0 0;
@@ -57,7 +58,8 @@
     .line-chart-card, .vaccine-dose-card{
         width: 90%;
         height: auto;
-        margin: auto auto 10% auto;
+        margin: auto;
+        /* margin: auto auto 10% auto; */
         padding: 1rem;
     }
     .phase-container{
@@ -179,6 +181,9 @@
     main{
         max-width: 350px;
     }
+    .line-chart-card, .vaccine-dose-card{
+        padding: 1.5rem;
+    }
 }
 @media screen and (min-width: 640px) {
     .container-info-1{
@@ -238,6 +243,13 @@
     }
 }
 @media  screen and (min-width: 1050px) {
+    .charts-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        width: 100%;
+        row-gap: 1rem;
+    }
     .container-info-2{
         margin-top: 15%;
     }
@@ -252,6 +264,15 @@
         justify-content: flex-start;
         margin-left: -120px;
         margin-top: -25px;
+    }
+    .line-chart-card, .vaccine-dose-card{
+        padding: 2rem;
+    }
+    .vaccine-dose-card{
+        width: 40%;
+        
+        /* margin: auto auto 10% auto; */
+        padding: 1rem;
     }
     .sub-txt{
         margin-left:35px;
