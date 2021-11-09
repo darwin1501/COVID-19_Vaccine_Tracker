@@ -8,8 +8,14 @@ var lineChartConfig = new Chart(lineChart, {
             data: [],
             fill: false,
             borderColor: [
-                'rgba(255, 99, 132, 1)'
+                'rgba(0, 230, 118, 1)'
             ],
+            backgroundColor:[
+                'rgba(0, 230, 118, 0.2)'
+            ],
+            pointBorderColor: 'rgba(0, 230, 118, 1)',
+            fill: true,
+            tension: 0,
             borderWidth: 1
         }]
     },
