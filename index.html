@@ -52,16 +52,20 @@
                 </div>
             </div>
             <!-- country selection -->
-            <div class="selection-container">
-                <select name="country" id="countrySelection" class="selection">
-                     <option selected="selected">Global</option>
-                </select>
-            </div>
+            
             <!-- flex container -->
-            <div class="charts-container">
-                <div class="card vaccine-dose-card">
-                    <p class="vaccine-count" id="vaccineDoseCount"></p>
-                    <p class="vaccine-count-lbl">Total Vaccine Doses</p>
+            <div class="charts-container" id="chart-content">
+                <!-- flex container -->
+                <div class="flex">
+                    <div class="selection-container">
+                        <select name="country" id="countrySelection" class="selection">
+                            <option selected="selected">Global</option>
+                        </select>
+                    </div>
+                    <div class="card vaccine-dose-card">
+                        <p class="vaccine-count" id="vaccineDoseCount"></p>
+                        <p class="vaccine-count-lbl">Total Vaccine Doses</p>
+                    </div>
                 </div>
                 <div class="card line-chart-card">
                     <p class="line-chart-lbl">Vaccine Dose Frequency</p>
@@ -74,23 +78,22 @@
                 <!-- card -->
                 <div class="card total-vaccine">
                     <div class="total-vaccine-content">
+                        <div class="vaccine-data-container">
+                            <h3 class="vaccine-data" id="vaccine-data"></h3>
+                        </div>
                         <div class="phase-lbl-container">
                             <p class="vaccine-data-lbl">
                                 Total Number of Possible Vaccines
                             </p>
-                        </div>
-                        <div class="divider"></div>
-                        <div class="vaccine-data-container">
-                            <h3 class="vaccine-data" id="vaccine-data"></h3>
                         </div>
                     </div>
                 </div>
                 <div class="phase-container">
                     <div class="phase-content">
                         <div class="phase-lbl-container">
+                        <br>
                         <p class="vaccine-data-lbl">Number of Possible Vaccines on Each Phases</p>
                         </div>
-                        <div class="divider"></div>
                         <div class="vacine-phases-container" id="vaccine-phases">
                         </div>
                     </div>
@@ -102,20 +105,22 @@
                     <h2 class="phase-title">List of Possible Vaccines</h2>
                 </div>  
                     <!-- controls -->
-                <div class="control">
-                    <div class="selection-container">
-                        <h2 class="control-lbl">
-                            View By:
-                        </h2>
-                        <select class="selection" id="selection" onchange="viewOption()">
-                            <option selected="selected" value="all">
-                                All
-                            </option>
-                        </select>
+                <div class="flex-control">
+                    <div class="control">
+                        <div class="selection-container selection-bottom">
+                            <h2 class="control-lbl">
+                                View By:
+                            </h2>
+                            <select class="selection" id="selection" onchange="viewOption()">
+                                <option selected="selected" value="all">
+                                    All
+                                </option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="search-container">
-                        <input type="text" name="vaccine" class="search-box" id="vaccineName" oninput="searchVaccine()" placeholder="Search Vaccine">
+                    <div class="search-container">
+                            <input type="text" name="vaccine" class="search-box" id="vaccineName" oninput="searchVaccine()" placeholder="Search Vaccine">
+                    </div>
                 </div>
                 <h2 class="control-lbl hint-txt">
                     Tap or Click the Cards to View Information
