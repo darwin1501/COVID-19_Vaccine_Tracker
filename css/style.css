@@ -11,6 +11,12 @@
 	--white: #FFFFFF;
 }
 /*!vaccine count card */
+.flex{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem ;
+}
 .vaccine-count{
   text-align: center;
   /* text-lg */
@@ -28,7 +34,7 @@
   text-align: left;
 }
 /* ------- */
-p{
+p, h3{
   margin: 0;
 }
 body, html{
@@ -57,6 +63,11 @@ body, html{
 	background-color: var(--grey2);
     height: 2px;
     width: 99%;
+}
+.flex-control{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
 }
 footer{
   display: flex;
@@ -158,12 +169,14 @@ label{
   padding: 10px;
   border-radius: 5px;
 /*  border: solid var(--grey-d1) 2px;*/
+  background-color: var(--white);
   border: none;
   box-shadow: 2px 2px 5px 2px var(--grey2);
 }
 .sub-txt{
 	text-align: center;
 	font-size: 12px;
+  margin: 0.5rem;
 }
 .toogle-btn-container{
   display: flex;
@@ -309,9 +322,9 @@ input:checked + .slider:before {
 
 /*flipping card style config START*/
 .scene {
-/*  width: 240px;
-  height: 320px;*/
+ /* width: 100%; */
 /*  border: 1px solid #CCC;*/
+  /* height: 100%; */
   margin: 40px 0;
   perspective: 600px;
   /*box-shadow: 2px 2px 5px 2px var(--grey2);*/
@@ -323,6 +336,8 @@ input:checked + .slider:before {
 }
 .back-txt{
   top: 10%;
+  left: 10%;
+  right: 10%;
   font-size: 14px !important;
   color: var(--black);
   text-align: left;
@@ -363,16 +378,16 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-/*  margin: 5%;*/
-
 } 
 .back-container{
   margin-top: -90%;
-  width: 90%;
+  width: 80%;
+  margin: auto;
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  padding: 1rem;
 }
 .front-container{
   width: 90%;
@@ -456,7 +471,9 @@ transition: 0.5s;
 
 /*dark mode design START*/
 
-.card-drk, .card-back-drk, .card-front-drk, .phase-content-drk, .thin-card-drk, .search-box-drk, .selection-drk{
+.card-drk, .card-back-drk, .card-front-drk, 
+.phase-content-drk, .thin-card-drk, .search-box-drk, 
+.selection-drk{
   background-color: var(--black-bg-l1);
   box-shadow: none !important;
 }
