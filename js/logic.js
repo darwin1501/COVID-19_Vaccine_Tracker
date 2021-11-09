@@ -55,10 +55,12 @@ async function requestVaccineAPI() {
 	// start loading animation
 	const loading = document.getElementById('loading');
 	const contentOne = document.getElementById('content-one');
-	const contentTwo =document.getElementById('content-two');
-
+	const contentTwo = document.getElementById('content-two');
+	const chartContent = document.getElementById('chart-content');
+	// hide content
 	contentOne.classList.add('hidden');
 	contentTwo.classList.add('hidden');
+	chartContent.classList.add('hidden');
 
 	// api request
 	let vaccineCoverageGlobal = await fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage?lastdays=7&fullData=true')
@@ -86,8 +88,10 @@ async function requestVaccineAPI() {
 	window.sessionStorage.vaccineCoverageOnCountry = JSON.stringify(vaccineCoverageOnCountry);
 	// stop loading animation	
 	loading.classList.add('hidden');
+	// show content
 	contentOne.classList.remove('hidden');
 	contentTwo.classList.remove('hidden');
+	chartContent.classList.remove('hidden');
 
 	loadCountryInSelection(vaccineCoverageOnCountry);
 
@@ -417,7 +421,7 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
     
     const body = document.querySelector('body');
 
-    const card = document.getElementsByClassName('card');
+    const cards = document.getElementsByClassName('card');
 
     const cardBack = document.getElementsByClassName('card__face--back');
 
@@ -445,7 +449,7 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
     const searchBox = document.getElementsByClassName('search-box');
 
-    const selection =document.getElementById('selection');
+	const selections = document.getElementsByClassName('selection')
     //sub text header
     const subTxt = document.getElementsByClassName('sub-txt');
 
@@ -476,8 +480,11 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 		body.classList.add('body-bg-lht');
 		body.classList.remove('body-bg-drk');
 
-		card[0].classList.add('card-lht');
-		card[0].classList.remove('card-drk');
+		
+		for (const card of cards) {
+			card.classList.add('card-lht');
+			card.classList.remove('card-drk');
+		}
 
 		// get all back flipping cards
 		for (let backCount = 0; backCount < cardBack.length; backCount++) {
@@ -535,8 +542,10 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 		searchBox[0].classList.add('search-box-lht');
 		searchBox[0].classList.remove('search-box-drk');
 
-		selection.classList.add('selection-lht');
-		selection.classList.remove('selection-drk');
+		for (const selection of selections) {
+			selection.classList.add('selection-lht');
+			selection.classList.remove('selection-drk');
+		}
 
 		for (let subFrontCount = 0; subFrontCount < subFrontTxt.length; subFrontCount++) {
 
@@ -604,8 +613,10 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 		body.classList.add('body-bg-drk');
 		body.classList.remove('body-bg-lht');
 
-		card[0].classList.add('card-drk');
-		card[0].classList.remove('card-lht');
+		for (const card of cards) {
+			card.classList.add('card-drk');
+			card.classList.remove('card-lht');
+		}
 
 		// get all back flipping cards
 		for (let backCount = 0; backCount < cardBack.length; backCount++) {
@@ -663,8 +674,10 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 		searchBox[0].classList.add('search-box-drk');
 		searchBox[0].classList.remove('search-box-lht');
 
-		selection.classList.add('selection-drk');
-		selection.classList.remove('selection-lht');
+		for (const selection of selections) {
+			selection.classList.add('selection-drk');
+			selection.classList.remove('selection-lht');
+		}
 
 		for (let subFrontCount = 0; subFrontCount < subFrontTxt.length; subFrontCount++) {
 
