@@ -269,7 +269,7 @@ const getVaccineInfo = (()=>{
 			    	<div class="front-container">
 			    		<p class="front-txt">${vaccineName}</p>
 			    		<br>
-			    		<p class="sub-front-txt">Trial Phase: ${trialPhase}</p>
+			    		<p class="sub-front-txt">Trial Phase: ${trialPhase}</p>						
 			    	</div>
 			    </div>
 			    <div class="card__face card__face--back">
