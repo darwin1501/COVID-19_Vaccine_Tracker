@@ -369,13 +369,14 @@ input:checked + .slider:before {
 }
 .card__face--front {
   background: var(--white);
- overflow-y: hidden;
+ /* overflow-y: hidden; */
 overflow-x: hidden;
   /* padding: 2rem; */
 }
 .card__face--back {
   background: var(--white);
   overflow-x: hidden;
+  overflow-y: hidden;
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
