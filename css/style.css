@@ -369,7 +369,8 @@ input:checked + .slider:before {
 }
 .card__face--front {
   background: var(--white);
-/*  overflow-y: hidden;*/
+ overflow-y: hidden;
+overflow-x: hidden;
   /* padding: 2rem; */
 }
 .card__face--back {
