@@ -370,10 +370,11 @@ input:checked + .slider:before {
 .card__face--front {
   background: var(--white);
 /*  overflow-y: hidden;*/
+  /* padding: 2rem; */
 }
 .card__face--back {
   background: var(--white);
-  overflow-y: hidden;
+  overflow-x: hidden;
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
@@ -396,6 +397,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 .front-txt{
   top: 25%;
@@ -404,6 +406,8 @@ input:checked + .slider:before {
   text-align: center;
   position: absolute;
   margin: 10%;
+  left: 10%;
+  right: 10%;
 }
 .sub-front-txt{
   color: var(--black);
@@ -412,6 +416,9 @@ input:checked + .slider:before {
   font-size: 0.3em;
   position: absolute;
   bottom: 0;
+  left: 10%;
+  right: 10%;
+  padding: 1rem;
 }
 /*flipping card style config END*/
 

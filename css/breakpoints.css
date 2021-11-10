@@ -308,10 +308,10 @@
 }
 @media  screen and (min-width: 1200px) {
     .back-txt{
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
     .container{
-        max-width: 1000px;
+        max-width: 1100px;
         margin: auto;
     }
 
